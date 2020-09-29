@@ -8,17 +8,3 @@ Liste des participants au projet Calendrier :
 + JUMEL Morgane
 + VAYSSIE Baptiste
 + RAHIM Ilyes
-
-
-
-
-
-
-
-
-
-
-
-
-+ DRAGON Vert
-
