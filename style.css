@@ -11,7 +11,8 @@
     background-position: center;
 }
 
-.bubble {
+.bubbleRightArrow {
+    position: relative;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +20,48 @@
     border-radius: 50%;
     width: 20em;
     height: 20em;
-    background: aquamarine;
+    background: #00b8cc;
+}
+.bubbleRightArrow::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 60px solid transparent;
+    border-left-color: #00b8cc;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: -15px;
+    margin-right: -35px;
+    z-index: -1;
+}
+.bubble {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+    background: #00b8cc;
+}
+.bubble::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 60px solid transparent;
+	border-right-color:#00b8cc;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -15px;
+    margin-left: -35px;
+    z-index: -1;
 }
 
 .bubbleText {
