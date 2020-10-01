@@ -1,3 +1,39 @@
+@media only screen and (max-width:500px) {
+
+
+    .changeCircle {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0%;
+        transform: none;
+    }
+
+    #burgerMenu {
+        width: 100%;
+    }
+
+    .change {
+        position: absolute;
+        z-index: 2;
+    }
+
+    ul.change {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        font-size: 30px;
+    }
+
+    .burgerMenuCircle {
+        transition: 0.12s ease;
+    }
+}
+
 .body {
     font-family: 'Inter', sans-serif;
 }
@@ -102,38 +138,85 @@
     font-size: 22px;
 }
 
-@media only screen and (max-width:500px) {
+#container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 1rem;
 
+    background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAATCAYAAAAUCsqbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAUElEQVRYhe3QsQ0AIBDDQML+O4cN6CxeyNemiZy2XYMlue7D76/9+sDvDAwzMMzAMAPDDAwzMMzAMAPDDAwzMMzAMAPDDAwzMMzAMAPDDAw7w0QHIhno8isAAAAASUVORK5CYII=);
+    background-repeat: repeat-y;
+    background-position: center;
+}
 
-    .changeCircle {
-        width: 100vw;
-        height: 100vh;
-        border-radius: 0%;
-        transform: none;
-    }
+.bubbleRightArrow {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+    background: #00b8cc;
+}
+.bubbleRightArrow::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 60px solid transparent;
+    border-left-color: #00b8cc;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: -15px;
+    margin-right: -35px;
+    z-index: -1;
+}
+.bubble {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+    background: #00b8cc;
+}
+.bubble::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 60px solid transparent;
+	border-right-color:#00b8cc;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -15px;
+    margin-left: -35px;
+    z-index: -1;
+}
 
-    #burgerMenu {
-        width: 100%;
-    }
+.bubbleText {
+    text-align: center;
+}
 
-    .change {
-        position: absolute;
-        z-index: 2;
-    }
-
-    ul.change {
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        margin: 0;
-        font-size: 30px;
-    }
-
-    .burgerMenuCircle {
-        transition: 0.12s ease;
-    }
+.bubble2 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+.bubble3 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+.bubble4 {
+    grid-row-start: 4;
+    grid-column-start: 2;
 }
