@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grow like a Wilder</title>
     <link rel="stylesheet" href="style.css">
+    <title>Grow like a Wilder</title>
 </head>
-<body>
-    <header>
-
-    </header>
+<body class="body">
+    <nav id="burgerMenu">
+        <div id="burgerMenuBar" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="navigation" id="navigation"> 
+            <li class="nav">Dates clefs</li>
+            <li class="nav">Compétences</li>
+            <li class="nav"><a class="navContacts" href="#">Contacts</a></li>
+        </ul>
+    </nav>
+    <div class="burgerMenuCircle" id="burgerMenuCircle">
+        
+    </div>
     <div class="rightBubule">
         <p></p>
     </div>
@@ -17,7 +30,10 @@
         <p></p>
     </div>
     <footer>
-
+        <div>
+            
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
