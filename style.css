@@ -1,7 +1,8 @@
-.body {
+body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     background-color: rgb(185, 200, 207);
+    font-size: 1rem;
 }
 
  /*.changeBody {
@@ -164,9 +165,83 @@
     grid-row-start: 4;
     grid-column-start: 1;
 }
+
+footer {
+    background-color: teal;
+}
+
+footer p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    padding: 20px 0 20px 0;
+    margin: 0;
+    opacity: .8;
+}
+
+footer > div > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer > div > ul > li {
+    display: inline-block;
+}
+
+footer > div > ul > li > a {
+    font-size: 2rem;
+}
+
+.fab {
+    padding: 1rem;
+    font-size: 2rem;
+    width: 2rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10px;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-github {
+    background: black;
+    color: white;
+}
 @media only screen and (min-width:768px) and (max-width:992px){
 
 }
+
+
 @media only screen and (min-width:1200px){
 #container {
     width: 100%;
