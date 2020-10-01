@@ -14,6 +14,14 @@
         position: absolute;
         z-index: 2;
     }
+    
+    .change #bar1 {
+        transform: translateY(10px) rotateZ(-45deg);
+    }
+    
+    .change #bar3 {
+        transform: translateY(-10px) rotate(45deg);
+    }
 
     ul.change {
         z-index: 1;

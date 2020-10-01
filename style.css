@@ -1,22 +1,26 @@
 .body {
     font-family: 'Inter', sans-serif;
+    background-color: rgb(248,249,250);
+    margin: 0;
 }
 
- /*.changeBody {
-    background-color: black; 
-}*/
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: teal;
+}
 
 #burgerMenuBar {
-    width: 20px;
+    width: 40px;
     height: 20px;
     margin: 30px 0 20px 20px;
     cursor: pointer;
 }
 
 .bar {
-    height: 5px;
+    height: 8px;
     width: 100%;
-    background-color: black;
+    background-color: rgb(31,34,41);
     display: block;
     border-radius: 5px;
     transition: 0.3s ease;
@@ -31,15 +35,15 @@
 }
 
 .change .bar {
-    background-color: grey;
+    background-color: rgb(126,139,160);
 }
 
 .change #bar1 {
-    transform: translateY(4px) rotateZ(-45deg);
+    transform: translateY(8px) rotateZ(-45deg);
 }
 
 .change #bar3 {
-    transform: translateY(-6px) rotate(45deg);
+    transform: translateY(-8px) rotate(45deg);
 }
 
 .change #bar2 {
@@ -79,7 +83,7 @@
     height: 0;
     background: radial-gradient(circle,rgb(247,235,152),rgb(247,235,152));
     border-radius: 50%;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
     margin: 30px 0 20px 20px;
 }
 
@@ -100,6 +104,21 @@
 #burgerMenu {
     z-index: 2;
     font-size: 22px;
+    transition: 1s ease;
+}
+
+.friseContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frise {
+    position: absolute;
+    background-color: black;
+    width: 10px;
+    height: 5000px;
 }
 
 #container {
@@ -109,8 +128,7 @@
     justify-items: center;
     align-items: center;
     grid-gap: 1rem;
-
-    background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAATCAYAAAAUCsqbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAUElEQVRYhe3QsQ0AIBDDQML+O4cN6CxeyNemiZy2XYMlue7D76/9+sDvDAwzMMzAMAPDDAwzMMzAMAPDDAwzMMzAMAPDDAwzMMzAMAPDDAw7w0QHIhno8isAAAAASUVORK5CYII=);
+   /* background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAATCAYAAAAUCsqbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAUElEQVRYhe3QsQ0AIBDDQML+O4cN6CxeyNemiZy2XYMlue7D76/9+sDvDAwzMMzAMAPDDAwzMMzAMAPDDAwzMMzAMAPDDAwzMMzAMAPDDAw7w0QHIhno8isAAAAASUVORK5CYII=); */
     background-repeat: repeat-y;
     background-position: center;
 }
