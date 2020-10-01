@@ -166,12 +166,14 @@ body {
     grid-column-start: 1;
 }
 
+/* Footer */
+
 footer {
     background-color: teal;
 }
 
 footer p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     color: white;
     padding: 20px 0 20px 0;
@@ -195,13 +197,15 @@ footer > div > ul > li > a {
 }
 
 .fab {
-    padding: 1rem;
-    font-size: 2rem;
-    width: 2rem;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    width: 1.2rem;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 10px;
+    margin: 3px 1px;
+        margin-right: 1px;
+    border-radius: 5px;
+    margin-right: 50px;
 }
 
 .fab:hover {
@@ -237,12 +241,13 @@ footer > div > ul > li > a {
     background: black;
     color: white;
 }
-@media only screen and (min-width:768px) and (max-width:992px){
+
+@media only screen and (min-width:768px) and (max-width:992px) {
 
 }
 
 
-@media only screen and (min-width:1200px){
+@media only screen and (min-width:1200px) {
 #container {
     width: 100%;
     display: grid;
@@ -312,5 +317,21 @@ footer > div > ul > li > a {
 .bubble4 {
     grid-row-start: 4;
     grid-column-start: 2;
+}
+
+/* Footer */
+
+.fab {
+    padding: 1rem;
+    font-size: 2rem;
+    width: 2rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10px;
+}
+
+footer p {
+    font-size: 1.5rem;
 }
 }
