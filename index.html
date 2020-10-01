@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
-
     <title>Dive into the Wild</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
 </head>
 
-<body class="body">
-    <header class="header">
+<body>
+    <header>
         <nav id="burgerMenu">
             <div id="burgerMenuBar" onclick="onClickMenu()">
                 <div id="bar1" class="bar"></div>
@@ -33,29 +35,45 @@
         </div>
     </div>  
     <div id="container">
-        <div class="bubble1 bubbleRightArrow">
-            <button>Hello</button>
-            <p class="bubbleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis neque animi amet, blanditiis quos, voluptates nobis quaerat iure et, laboriosam eveniet eius officiis eaque ut maxime vitae! Doloremque, ipsam illo.</p>
+        <div class="bubble1 bubble rightArrow"> 
+            <p class="bubbleText"><b>Entrez dans le bain :</b><br> 
+                Entrer dans le monde du code, c'est comme faire un saut dans le grand bain.
+            Ici nous te prensentont le deroulé de ce plongeon dans la vie de developpeur.</p>
+
+            <button>Competence Acquise</button>
         </div>
 
         <div class="bubble2 bubble">
-            <p class="bubbleText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, vel quod! Repellendus fuga eum distinctio. Non voluptates magni molestias laudantium, debitis, deserunt hic nisi sed deleniti rem, ad repellat aspernatur!</p>
+            <p class="bubbleText"><b>Rentrée :</b><br> 
+                Vendredi 11/09: c'est le moment de se rencontrer. Faire connaissance avec les autres wilders
+            choisir le nom de ta promo</p>
+            <button>Competence Acquise</button>
         </div>
-        <div class="bubble3 bubbleRightArrow">
-            <button>Hello</button>
-            <p class="bubbleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis neque animi amet, blanditiis quos, voluptates nobis quaerat iure et, laboriosam eveniet eius officiis eaque ut maxime vitae! Doloremque, ipsam illo.</p>
+        <div class="bubble3 bubble rightArrow">
+            <p class="bubbleText"><b># projet 1</b><br>
+                mardi 29/09 -> vendredi 09/10</p>
+            <button>Competence Acquise</button>
         </div>
         <div class="bubble4 bubble">
-            <p class="bubbleText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, vel quod! Repellendus fuga eum distinctio. Non voluptates magni molestias laudantium, debitis, deserunt hic nisi sed deleniti rem, ad repellat aspernatur!</p>
+            <p class="bubbleText"><b># checkpoint 1</b><br>
+                vendredi 16/10</p>
+            <button>Competence Acquise</button>
         </div>
     </div>
 
     <footer>
-        <!--
-            Charlie en cours...
-        -->
         <div>
-            
+            <p><strong>Dive into the Wild</strong> &copy; 2020 - 2021</p>
+            <ul>
+                <li><a href="https://www.facebook.com/wildcodeschool"                   title="Accéder au Facebook de la Wild Code School"  class="fab fa-facebook"></a></li>
+                <li><a href="https://twitter.com/wildcodeschool"                        title="Accéder au Twitter de la Wild Code School"   class="fab fa-twitter"></a></li>
+                <li><a href="https://www.linkedin.com/school/10387519"                  title="Accéder au Linkedin de la Wild Code School"  class="fab fa-linkedin"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw"  title="Accéder au YouTube de la Wild Code School"   class="fab fa-youtube"></a></li>
+                <li><a href="https://github.com/WildCodeSchool"                         title="Accéder au GitHub de la Wild Code School"    class="fab fa-github"></a></li>
+                <li><a href="https://www.instagram.com/wildcodeschool/"                 title="Accéder au instagram de la Wild Code School" class="fab fa-instagram"></a></li>
+            </ul>
+
+            <p><img src="https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,h_60/v1/static/i47pv2h3zaaf5zwhrvzp" alt="Logo de la Wild Code School"></p>
         </div>
     </footer>
     <script src="script.js"></script>
