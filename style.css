@@ -1,39 +1,3 @@
-@media only screen and (max-width:500px) {
-
-
-    .changeCircle {
-        width: 100vw;
-        height: 100vh;
-        border-radius: 0%;
-        transform: none;
-    }
-
-    #burgerMenu {
-        width: 100%;
-    }
-
-    .change {
-        position: absolute;
-        z-index: 2;
-    }
-
-    ul.change {
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        margin: 0;
-        font-size: 30px;
-    }
-
-    .burgerMenuCircle {
-        transition: 0.12s ease;
-    }
-}
-
 .body {
     font-family: 'Inter', sans-serif;
 }
@@ -219,4 +183,40 @@
 .bubble4 {
     grid-row-start: 4;
     grid-column-start: 2;
+}
+
+@media only screen and (max-width:500px) {
+
+
+    .changeCircle {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0%;
+        transform: none;
+    }
+
+    #burgerMenu {
+        width: 100%;
+    }
+
+    .change {
+        position: absolute;
+        z-index: 2;
+    }
+
+    ul.change {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        font-size: 30px;
+    }
+
+    .burgerMenuCircle {
+        transition: 0.12s ease;
+    }
 }
