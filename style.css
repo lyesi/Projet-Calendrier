@@ -4,7 +4,10 @@ body {
     margin: 0;
     font-size: 1rem;
 }
-/* barre de navigation*/
+
+
+/* Barre de navigation */
+
 header {
     width: 100%;
     height: 85px;
@@ -33,7 +36,10 @@ header {
     margin-right: 20px;
     margin-top: 10px;
 }
-/* menu burger*/
+
+
+/* Menu Burger */
+
 #burgerMenuBar {
     width: 40px;
     height: 20px;
@@ -130,7 +136,10 @@ header {
     font-size: 22px;
     transition: 1s ease;
 }
-/* frise */
+
+
+/* Frise */
+
 .friseContainer {
     width: 100%;
     display: flex;
@@ -145,7 +154,10 @@ header {
     height: 3500px;
     z-index: -1;
 }
+
+
 /* Grid */
+
 #container {
     width: 100%;
     display: grid;
@@ -155,6 +167,8 @@ header {
     grid-gap: 3rem;
     margin-top: 120px;
 }
+
+
 /* Bubbles */
 
 .bubbleText {
@@ -207,6 +221,7 @@ header {
     background: rgb(127,181,183);
     box-shadow: -5px -3px 7px 0px rgb(115, 154, 172);
 }
+
 .bubbleRightArrow::after {
 	content: '';
 	position: absolute;
@@ -224,7 +239,7 @@ header {
 }
 
 
-/*Bubble Coordonnées*/
+/* Bubble Coordonnées */
 
 .bubble2 {
     grid-row-start: 2;
@@ -238,6 +253,44 @@ header {
     grid-row-start: 4;
     grid-column-start: 1;
 }
+
+
+/* Contact */
+
+#formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px dotted teal;
+    width: 100%;
+    margin: 0 10px;
+    background-color: #f8f9fa;
+}
+
+#formulaire h2 {
+    width: 100%;
+}
+
+#formulaire textarea {
+    width: 244px;
+}
+
+#formulaire label {
+    display: inline-block;
+    width: 150px;
+}
+
+.contact {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.map {
+    display: inline-block;
+    width: 90%;
+    margin: 20px auto 0 auto;
+}
+
 
 /* Footer */
 
@@ -257,7 +310,7 @@ footer p {
 }
 
 footer > div {
-    margin-top: 120px;
+    margin-top: 20px;
 }
 
 footer > div > ul {
@@ -269,6 +322,8 @@ footer > div > ul {
 
 footer > div > ul > li {
     display: inline-block;
+    margin-bottom: 5px;
+    width: 110px;
 }
 
 footer > div > ul > li > a {
@@ -281,10 +336,8 @@ footer > div > ul > li > a {
     width: 1.2rem;
     text-align: center;
     text-decoration: none;
-    margin: 3px 1px;
-    margin-right: 1px;
+    margin: 0 auto;
     border-radius: 5px;
-    margin-right: 50px;
 }
 
 .fab:hover {
@@ -320,27 +373,29 @@ footer > div > ul > li > a {
     background: black;
     color: white;
 }
+
+
 /* Media queries */
 
-@media only screen and (min-width:768px) and (max-width:992px){
-#container {
-    margin-top: 20%;
-    margin-bottom: 10%;
-}
-.bubble .bubbleRightArrow {
-    width: 24em;
-    height: 24em;
-}
-.changeCircle {
-    width: 600px;
-    height: 600px;
-    margin: 0;
-    padding: 0;
-    transform: translate(-50%,-35%);
+@media only screen and (min-width:768px) and (max-width:992px) {
+    #container {
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+    .bubble .bubbleRightArrow {
+        width: 24em;
+        height: 24em;
+    }
+    .changeCircle {
+        width: 600px;
+        height: 600px;
+        margin: 0;
+        padding: 0;
+        transform: translate(-50%,-35%);
+    }
 }
 
-}
-@media only screen and (min-width:993px) and (max-width:1199px){
+@media only screen and (min-width:993px) and (max-width:1199px) {
     #container {
         grid-template-columns: 1fr 1fr;
         grid-gap: 4rem; 
@@ -356,7 +411,108 @@ footer > div > ul > li > a {
         width: 200px;
     }
 
-/*bubble Coordonée*/
+
+    /* Bubbles Coordonées */
+
+    .bubble2 {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+
+    .bubble3 {
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+
+    .bubble4 {
+        grid-row-start: 4;
+        grid-column-start: 2;
+    }  
+}
+
+@media only screen and (min-width:1200px) {
+    .titleMain {
+        margin-top: -78px;
+        text-align: center;
+        font-size: 40px;
+        color: rgb(31,34,41);
+    }
+
+    .subtitle {
+        margin-top: -35px;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(31,34,41);
+    }
+
+    .wildLogo {
+        width: 80px;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+        margin-top: 2px;
+    }
+
+    #container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 4rem; 
+    }
+
+    /* Bubbles & arrows */
+
+    .rightArrow {
+        position: relative;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 20em;
+        height: 20em;
+        background: rgb(99,146,176);
+    }
+    .rightArrow::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 60px solid transparent;
+        border-left-color: rgb(99,146,176);
+        border-right: 0;
+        border-bottom: 0;
+        margin-top: -15px;
+        margin-right: -35px;
+        z-index: -1;
+    }
+
+    .bubble::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 60px solid transparent;
+        border-right-color:rgb(127,181,183);
+        border-left: 0;
+        border-bottom: 0;
+        margin-top: -15px;
+        margin-left: -35px;
+        z-index: -1;
+    }
+
+    .bubbleText {
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+        width: 200px;
+    }
 
     .bubble2 {
         grid-row-start: 2;
@@ -369,118 +525,57 @@ footer > div > ul > li > a {
     .bubble4 {
         grid-row-start: 4;
         grid-column-start: 2;
-    }  
-}
+    }
 
-@media only screen and (min-width:1200px) {
 
-.titleMain {
-    margin-top: -78px;
-    text-align: center;
-    font-size: 40px;
-    color: rgb(31,34,41);
-}
+    /* Contact */
 
-.subtitle {
-    margin-top: -35px;
-    text-align: center;
-    font-size: 20px;
-    color: rgb(31,34,41);
-}
+    #formulaire {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 2px dotted teal;
+        width: 50%;
+        margin: 20px auto 10px auto;
+        background-color: #f8f9fa;
+    }
 
-.wildLogo {
-    width: 80px;
-    position: absolute;
-    right: 0;
-    margin-right: 20px;
-    margin-top: 2px;
-}
+    #formulaire h2 {
+        width: 100%;
+    }
 
-#container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    grid-gap: 4rem; 
-}
-/* Bubble & arrows */
-.rightArrow {
-    position: relative;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    width: 20em;
-    height: 20em;
-    background: rgb(99,146,176);
-}
-.rightArrow::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border: 60px solid transparent;
-    border-left-color: rgb(99,146,176);
-    border-right: 0;
-    border-bottom: 0;
-    margin-top: -15px;
-    margin-right: -35px;
-    z-index: -1;
-}
+    #formulaire textarea {
+        width: 244px;
+    }
 
-.bubble::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 60px solid transparent;
-	border-right-color:rgb(127,181,183);
-	border-left: 0;
-	border-bottom: 0;
-	margin-top: -15px;
-    margin-left: -35px;
-    z-index: -1;
-}
+    #formulaire label {
+        display: inline-block;
+        width: 150px;
+    }
 
-.bubbleText {
-    text-align: center;
-    font-size: 18px;
-    padding: 20px;
-    width: 200px;
-}
+    .contact {
+        display: inline-block;
+        width: 45%;
+    }
 
-.bubble2 {
-    grid-row-start: 2;
-    grid-column-start: 2;
-}
-.bubble3 {
-    grid-row-start: 3;
-    grid-column-start: 1;
-}
-.bubble4 {
-    grid-row-start: 4;
-    grid-column-start: 2;
-}
+    .map {
+        display: inline-block;
+        width: 45%;
+    }
 
-/* Footer */
 
-.fab {
-    padding: 1rem;
-    font-size: 2rem;
-    width: 2rem;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 10px;
-}
+    /* Footer */
 
-footer p {
-    font-size: 1.5rem;
-}
+    .fab {
+        padding: 1rem;
+        font-size: 2rem;
+        width: 2rem;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 10px;
+    }
+
+    footer p {
+        font-size: 1.5rem;
+    }
 }
