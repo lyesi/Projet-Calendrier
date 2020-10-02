@@ -8,7 +8,7 @@ body {
 header {
     width: 100%;
     height: 85px;
-    background-color: rgb(127,181,183);
+    background-color: rgb(99,146,176);
     box-shadow: gray -4px 1px 20px
 }
 /* menu burger*/
@@ -120,7 +120,7 @@ header {
     position: absolute;
     background-color: black;
     width: 10px;
-    height: 3500px;
+    height: 3300px;
     z-index: -1;
 }
 /*Grid*/
@@ -131,7 +131,7 @@ header {
     justify-items: center;
     align-items: center;
     grid-gap: 3rem;
-    margin-top: 20%;
+    margin-top: 120px;
 }
 /*bubble*/
 
@@ -144,7 +144,7 @@ header {
     border-radius: 50%;
     width: 20em;
     height: 20em;
-    background: #00b8cc;
+    background: rgb(127,181,183);
     box-shadow: 12px 12px 2px 1px rgb(115, 154, 172);
 }
 .bubbleText {
@@ -160,7 +160,7 @@ header {
 	width: 0;
 	height: 0;
 	border: 60px solid transparent;
-	border-right-color:#00b8cc;
+	border-right-color:rgb(127,181,183);
 	border-left: 0;
 	border-bottom: 0;
 	margin-top: -15px;
@@ -184,7 +184,7 @@ header {
 /* Footer */
 
 footer {
-    background-color: rgb(127,181,183);
+    background-color: rgb(99,146,176);
     margin-bottom: 0;
 }
 
@@ -195,6 +195,10 @@ footer p {
     padding: 20px 0 20px 0;
     margin: 0;
     opacity: .8;
+}
+
+footer > div {
+    margin-top: 120px;
 }
 
 footer > div > ul {
@@ -282,7 +286,7 @@ footer > div > ul > li > a {
     border-radius: 50%;
     width: 20em;
     height: 20em;
-    background: #00b8cc;
+    background: rgb(99,146,176);
 }
 .RightArrow::after {
     content: '';
@@ -292,7 +296,7 @@ footer > div > ul > li > a {
     width: 0;
     height: 0;
     border: 60px solid transparent;
-    border-left-color: #00b8cc;
+    border-left-color: rgb(99,146,176);
     border-right: 0;
     border-bottom: 0;
     margin-top: -15px;
@@ -308,7 +312,7 @@ footer > div > ul > li > a {
 	width: 0;
 	height: 0;
 	border: 60px solid transparent;
-	border-right-color:#00b8cc;
+	border-right-color:rgb(99,146,176)c;
 	border-left: 0;
 	border-bottom: 0;
 	margin-top: -15px;
