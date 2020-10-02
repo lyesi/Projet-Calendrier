@@ -1,3 +1,15 @@
+.titleMain {
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    font-size: 3em;
+    margin: 0.5em;
+}
+.subtitle {
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    margin: 0.1em;
+}
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -104,7 +116,7 @@ body {
     z-index: 2;
     font-size: 22px;
 }
-/*Grid*/
+/* Grid */
 #container {
     width: 100%;
     display: grid;
@@ -118,9 +130,16 @@ body {
     background-repeat: repeat-y;
     background-position: right;*/
 }
-/*bubble*/
+/* Bubbles */
+
+.bubbleText {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
 
 .bubble {
+    content: '';
     position: relative;
     display:flex;
     flex-direction: column;
@@ -130,12 +149,7 @@ body {
     width: 20em;
     height: 20em;
     background: #00b8cc;
-    box-shadow: 12px 12px 2px 1px rgb(115, 154, 172);
-}
-.bubbleText {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    box-shadow: 12px 5px 10px 0px rgb(115, 154, 172);
 }
 .bubble::after {
 	content: '';
@@ -152,7 +166,38 @@ body {
     margin-left: -35px;
     z-index: -1;
 }
-/*bubble Coordonée*/
+.bubbleRightArrow {
+    content:'';
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+    background: #00b8cc;
+    box-shadow: -12px -5px 10px 0px rgb(115, 154, 172);
+}
+.bubbleRightArrow::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 60px solid transparent;
+	border-left-color:#00b8cc;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -15px;
+    margin-right: -35px;
+    z-index: -1;
+}
+
+
+/*Bubble Coordonnées*/
+
 .bubble2 {
     grid-row-start: 2;
     grid-column-start: 1;
@@ -165,6 +210,8 @@ body {
     grid-row-start: 4;
     grid-column-start: 1;
 }
+
+/* Footer */
 
 footer {
     background-color: teal;
@@ -237,7 +284,24 @@ footer > div > ul > li > a {
     background: black;
     color: white;
 }
+/* Media queries */
+
 @media only screen and (min-width:768px) and (max-width:992px){
+#container {
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+.bubble .bubbleRightArrow {
+    width: 24em;
+    height: 24em;
+}
+.changeCircle {
+    width: 600px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%,-35%);
+}
 
 }
 
@@ -251,8 +315,8 @@ footer > div > ul > li > a {
     align-items: center;
     grid-gap: 1rem; 
 }
-
-.RightArrow {
+/* Bubble & arrows */
+.rightArrow {
     position: relative;
     display:flex;
     flex-direction: column;
@@ -263,7 +327,7 @@ footer > div > ul > li > a {
     height: 20em;
     background: #00b8cc;
 }
-.RightArrow::after {
+.rightArrow::after {
     content: '';
     position: absolute;
     right: 0;
