@@ -4,13 +4,26 @@ body {
     margin: 0;
     font-size: 1rem;
 }
-/* bar de navigation*/
+/* barrede navigation*/
 header {
     width: 100%;
     height: 85px;
     background-color: rgb(127,181,183);
-    box-shadow: gray -4px 1px 20px
+    box-shadow: -4px 1px 20px gray;
+    z-index: 9999;
 }
+
+/* carousel */
+
+#carousel {
+    background-image: url('https://via.placeholder.com/1500x500.png');
+    width: 100%;
+    height: 500px;
+    box-shadow: -4px 1px 20px gray;
+
+}
+
+
 /* menu burger*/
 #burgerMenuBar {
     width: 40px;
