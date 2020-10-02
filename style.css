@@ -152,19 +152,8 @@ body {
     margin-left: -35px;
     z-index: -1;
 }
-/*bubble Coordonée*/
-.bubble2 {
-    grid-row-start: 2;
-    grid-column-start: 1;
-}
-.bubble3 {
-    grid-row-start: 3;
-    grid-column-start: 1;
-}
-.bubble4 {
-    grid-row-start: 4;
-    grid-column-start: 1;
-}
+
+/*Footer*/
 
 footer {
     background-color: teal;
@@ -237,10 +226,40 @@ footer > div > ul > li > a {
     background: black;
     color: white;
 }
+
+/*mediaQuery*/
+
 @media only screen and (min-width:768px) and (max-width:992px){
 
 }
+@media only screen and (min-width:993px) and (max-width:1199px){
+    #container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem; 
+    } 
+    .bubble {
+        width: 25em;
+        height: 25em;
+    }
+    .bubbleText {
+        font-size: 22px;
+    }
 
+/*bubble Coordonée*/
+
+    .bubble2 {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+    .bubble3 {
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+    .bubble4 {
+        grid-row-start: 4;
+        grid-column-start: 2;
+    }  
+}
 
 @media only screen and (min-width:1200px){
 #container {
@@ -249,21 +268,10 @@ footer > div > ul > li > a {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    grid-gap: 1rem; 
+    grid-gap: 4rem; 
 }
 
-.RightArrow {
-    position: relative;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    width: 20em;
-    height: 20em;
-    background: #00b8cc;
-}
-.RightArrow::after {
+.rightArrow::after {
     content: '';
     position: absolute;
     right: 0;
