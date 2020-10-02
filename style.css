@@ -1,25 +1,40 @@
+.titleMain {
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    font-size: 3em;
+    margin: -90px;
+}
+.subtitle {
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    margin: 83px;
+}
 body {
     font-family: 'Inter', sans-serif;
+    background-color: rgb(248,249,250);
     margin: 0;
-    background-color: rgb(185, 200, 207);
     font-size: 1rem;
 }
-
- /*.changeBody {
-    background-color: black; 
-}*/
-
+/* barre de navigation*/
+header {
+    width: 100%;
+    height: 85px;
+    background-color: rgb(127,181,183);
+    box-shadow: gray -4px 1px 20px
+}
+/* menu burger*/
 #burgerMenuBar {
-    width: 20px;
+    width: 40px;
     height: 20px;
     margin: 30px 0 20px 20px;
     cursor: pointer;
 }
 
 .bar {
-    height: 5px;
+    height: 8px;
     width: 100%;
-    background-color: black;
+    background-color: rgb(31,34,41);
     display: block;
     border-radius: 5px;
     transition: 0.3s ease;
@@ -34,15 +49,15 @@ body {
 }
 
 .change .bar {
-    background-color: grey;
+    background-color: rgb(126,139,160);
 }
 
 .change #bar1 {
-    transform: translateY(4px) rotateZ(-45deg);
+    transform: translateY(8px) rotateZ(-45deg);
 }
 
 .change #bar3 {
-    transform: translateY(-6px) rotate(45deg);
+    transform: translateY(-8px) rotate(45deg);
 }
 
 .change #bar2 {
@@ -80,9 +95,9 @@ body {
     z-index: 1;
     width: 0;
     height: 0;
-    background: radial-gradient(circle,rgb(247,235,152),rgb(247,235,152));
+    background: radial-gradient(circle,rgb(45,125,124),rgb(127,181,183));
     border-radius: 50%;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
     margin: 30px 0 20px 20px;
 }
 
@@ -103,8 +118,24 @@ body {
 #burgerMenu {
     z-index: 2;
     font-size: 22px;
+    transition: 1s ease;
 }
-/*Grid*/
+/* frise */
+.friseContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frise {
+    position: absolute;
+    background-color: black;
+    width: 10px;
+    height: 3500px;
+    z-index: -1;
+}
+/* Grid */
 #container {
     width: 100%;
     display: grid;
@@ -113,14 +144,17 @@ body {
     align-items: center;
     grid-gap: 3rem;
     margin-top: 20%;
-
-    /*background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAATCAYAAAAUCsqbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAUElEQVRYhe3QsQ0AIBDDQML+O4cN6CxeyNemiZy2XYMlue7D76/9+sDvDAwzMMzAMAPDDAwzMMzAMAPDDAwzMMzAMAPDDAwzMMzAMAPDDAw7w0QHIhno8isAAAAASUVORK5CYII=);
-    background-repeat: repeat-y;
-    background-position: right;*/
 }
-/*bubble*/
+/* Bubbles */
+
+.bubbleText {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
 
 .bubble {
+    content: '';
     position: relative;
     display:flex;
     flex-direction: column;
@@ -130,12 +164,7 @@ body {
     width: 20em;
     height: 20em;
     background: #00b8cc;
-    box-shadow: 12px 12px 2px 1px rgb(115, 154, 172);
-}
-.bubbleText {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    box-shadow: 12px 5px 10px 0px rgb(115, 154, 172);
 }
 .bubble::after {
 	content: '';
@@ -152,15 +181,60 @@ body {
     margin-left: -35px;
     z-index: -1;
 }
+.bubbleRightArrow {
+    content:'';
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+    background: #00b8cc;
+    box-shadow: -12px -5px 10px 0px rgb(115, 154, 172);
+}
+.bubbleRightArrow::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 60px solid transparent;
+	border-left-color:#00b8cc;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -15px;
+    margin-right: -35px;
+    z-index: -1;
+}
 
-/*Footer*/
+
+/*Bubble Coordonnées*/
+
+.bubble2 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+.bubble3 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+.bubble4 {
+    grid-row-start: 4;
+    grid-column-start: 1;
+}
+
+/* Footer */
 
 footer {
-    background-color: teal;
+    background-color: rgb(127,181,183);
+    margin-bottom: 0;
 }
 
 footer p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     color: white;
     padding: 20px 0 20px 0;
@@ -184,13 +258,15 @@ footer > div > ul > li > a {
 }
 
 .fab {
-    padding: 1rem;
-    font-size: 2rem;
-    width: 2rem;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    width: 1.2rem;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 10px;
+    margin: 3px 1px;
+        margin-right: 1px;
+    border-radius: 5px;
+    margin-right: 50px;
 }
 
 .fab:hover {
@@ -226,10 +302,24 @@ footer > div > ul > li > a {
     background: black;
     color: white;
 }
-
-/*mediaQuery*/
+/* Media queries */
 
 @media only screen and (min-width:768px) and (max-width:992px){
+#container {
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+.bubble .bubbleRightArrow {
+    width: 24em;
+    height: 24em;
+}
+.changeCircle {
+    width: 600px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%,-35%);
+}
 
 }
 @media only screen and (min-width:993px) and (max-width:1199px){
@@ -261,7 +351,7 @@ footer > div > ul > li > a {
     }  
 }
 
-@media only screen and (min-width:1200px){
+@media only screen and (min-width:1200px) {
 #container {
     width: 100%;
     display: grid;
@@ -270,7 +360,18 @@ footer > div > ul > li > a {
     align-items: center;
     grid-gap: 4rem; 
 }
-
+/* Bubble & arrows */
+.rightArrow {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+    background: #00b8cc;
+}
 .rightArrow::after {
     content: '';
     position: absolute;
@@ -320,5 +421,21 @@ footer > div > ul > li > a {
 .bubble4 {
     grid-row-start: 4;
     grid-column-start: 2;
+}
+
+/* Footer */
+
+.fab {
+    padding: 1rem;
+    font-size: 2rem;
+    width: 2rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10px;
+}
+
+footer p {
+    font-size: 1.5rem;
 }
 }
