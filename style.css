@@ -265,7 +265,77 @@ header {
     margin-right: -35px;
     z-index: -1;
 }
+/* Button in bubble*/
 
+.button {
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: sans-serif;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    --hue: 220;
+    --saturation: 100%;
+    --lightness: 50%;
+    background: hsl(var(--hue), var(--saturation), var(--lightness));
+    color: #ffffff;
+}
+
+.button:hover,
+.button:focus {
+    --lightness: 40%;
+}
+.modal-trigger {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.modal[open] > .modal-trigger::before {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    cursor: default;
+    content: '';
+    z-index: 99;
+    background: rgba(27,31,35,0.5);
+  }
+  
+  .modal-content {
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    font-size: 4em;
+    animation-name: fadein;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+    background-color: white;
+    padding: 1rem;
+  }
+  
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.modal-trigger::-webkit-details-marker {
+  display:none;
+}
 
 /* Bubble Coordonnées */
 
@@ -446,16 +516,42 @@ footer > div > ul > li > a {
         grid-row-start: 2;
         grid-column-start: 2;
     }
-
     .bubble3 {
         grid-row-start: 3;
         grid-column-start: 1;
     }
-
     .bubble4 {
         grid-row-start: 4;
         grid-column-start: 2;
+    } 
+    .bubble5 {
+        grid-row-start: 5;
+        grid-column-start: 1;
+    }
+    .bubble6 {
+        grid-row-start: 6;
+        grid-column-start: 2;
+    }
+    .bubble7 {
+        grid-row-start: 7;
+        grid-column-start: 1;
     }  
+    .bubble8 {
+        grid-row-start: 8;
+        grid-column-start: 2;
+    }
+    .bubble9 {
+        grid-row-start: 9;
+        grid-column-start: 1;
+    }
+    .bubble10 {
+        grid-row-start: 10;
+        grid-column-start: 2;
+    } 
+    .bubble11 {
+        grid-row-start: 11;
+        grid-column-start: 1;
+    }    
 }
 
 @media only screen and (min-width:1200px) {
@@ -469,17 +565,12 @@ footer > div > ul > li > a {
     .burgerMenuBar {
         display: none;
     }
-
     .burgerMenuCircle {
         display: none;
     }
-
     .navigation {
-
         display: flex;
-
     }
-
     .mainTitle {
         margin-top: -78px;
         text-align: center;
@@ -520,8 +611,8 @@ footer > div > ul > li > a {
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        width: 20em;
-        height: 20em;
+        width: 25em;
+        height: 25em;
         background: rgb(99,146,176);
     }
     .rightArrow::after {
@@ -538,6 +629,18 @@ footer > div > ul > li > a {
         margin-top: -15px;
         margin-right: -35px;
         z-index: -1;
+    }
+    .bubble {
+        width: 35em;
+        height: 35em;
+        background: rgb(127,181,183);
+        box-shadow: -9px -7px 11px 0px rgb(115, 154, 172);
+    }
+    .bubbleRightArrow {
+        width: 35em;
+        height: 35em;
+        background: rgb(127,181,183);
+        box-shadow: -9px -7px 11px 0px rgb(115, 154, 172);
     }
 
     .bubble::after {
@@ -574,7 +677,36 @@ footer > div > ul > li > a {
     .bubble4 {
         grid-row-start: 4;
         grid-column-start: 2;
+    } 
+    .bubble5 {
+        grid-row-start: 5;
+        grid-column-start: 1;
     }
+    .bubble6 {
+        grid-row-start: 6;
+        grid-column-start: 2;
+    }
+
+    .bubble7 {
+        grid-row-start: 7;
+        grid-column-start: 1;
+    }  
+    .bubble8 {
+        grid-row-start: 8;
+        grid-column-start: 2;
+    }
+    .bubble9 {
+        grid-row-start: 9;
+        grid-column-start: 1;
+    }
+    .bubble10 {
+        grid-row-start: 10;
+        grid-column-start: 2;
+    } 
+    .bubble11 {
+        grid-row-start: 11;
+        grid-column-start: 1;
+    }    
 
 
     /* Contact */
