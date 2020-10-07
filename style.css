@@ -283,98 +283,10 @@ header {
     height: 8px;
     width: 100%;
     background-color: rgb(31,34,41);
-
-    display: block;
-    border-radius: 5px;
-    transition: 0.3s ease;
-    /*width: 10px;
+    width: 10px;
     height: 3500px;
-    z-index: -4;*/
-
-  }
-  
-  #bar1 {
-    transform: translateY(-4px);
-  }
-  
-  #bar3 {
-    transform: translateY(4px);
-  }
-  
-  .change .bar {
-    background-color: rgb(248,249,250);
-  }
-  
-  .change #bar1 {
-    transform: translateY(8px) rotateZ(-45deg);
-  }
-  
-  .change #bar3 {
-    transform: translateY(-8px) rotate(45deg);
-  }
-  
-  .change #bar2 {
-    opacity: 0;
-  }
-  
-  .navigation .nav .navContacts {
-    color: rgb(31,34,41);
-    text-decoration: none;
-  }
-  
-  .navigation .nav {
-    list-style-type: none;
-    padding: 16px 0;
-  }
-  
-  .navigation {
-    padding: 0;
-    margin: 0 20px;
-    transition: 0.3s ease;
-    display: none;
-  }
-  
-  .nav:hover {
-    font-weight: bold;
-    color: rgb(31,34,41);
-    text-shadow: #CCC 2px 2px 18px;
-  }
-  
-  .change {
-    display: block;
-  }
-  
-  .burgerMenuCircle {
-    z-index: 1;
-    width: 0;
-    height: 0;
-    background: radial-gradient(circle,rgb(99,146,176),rgb(99,146,176));
-    border-radius: 50%;
-    transition: 0.2s ease;
-    margin: 30px 0 20px 20px;
-  }
-  
-  .changeCircle {
-    width: 500px;
-    height: 500px;
-    margin: 0;
-    padding: 0;
-    transform: translate(-50%,-35%);
-  }
-  
-  .burgerMenuCircle, #burgerMenu {
-    top: 0;
-    left: 0;
-    position: absolute;
-  }
-  
-  #burgerMenu {
-    z-index: 2;
-    font-size: 22px;
-    transition: 1s ease;
-  }
-
-    
+    z-index: -4;
+}
 
 /*  Waves section */
 *
@@ -462,7 +374,6 @@ section .wave.wave4
         background-position-x: -1000px;
     }
 }
-
 
 
 /* Grid */
