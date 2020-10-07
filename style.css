@@ -195,6 +195,7 @@ header {
     margin: 0;
     padding: 0;
 }
+
 section
 {
     position: relative;
@@ -203,6 +204,7 @@ section
     background: #3586ff;
     overflow: hidden;
 }
+
 section .wave
 {
     position: absolute;
@@ -213,6 +215,7 @@ section .wave
     background-image: url("https://zupimages.net/up/20/41/eiam.png");
     background-size: 1000px 100px;
 }
+
 section .wave.wave1
 {
     animation: animate 30s linear infinite;
@@ -221,6 +224,7 @@ section .wave.wave1
     animation-delay: 0s;
     bottom: 0;
 }
+
 section .wave.wave2
 {
     animation: animate2 10s linear infinite;
@@ -229,6 +233,7 @@ section .wave.wave2
     animation-delay: -5s;
     bottom: 10px;
 }
+
 section .wave.wave3
 {
     animation: animate 8s linear infinite;
@@ -237,6 +242,7 @@ section .wave.wave3
     animation-delay: -2s;
     bottom: 15px;
 }
+
 section .wave.wave4
 {
     animation: animate2 5s linear infinite;
@@ -245,6 +251,7 @@ section .wave.wave4
     animation-delay: -5s;
     bottom: 20px;
 }
+
 @keyframes animate
 {
     0%
@@ -256,6 +263,7 @@ section .wave.wave4
         background-position-x: 1000px;
     }
 }
+
 @keyframes animate2
 {
     0%
@@ -267,6 +275,7 @@ section .wave.wave4
         background-position-x: -1000px;
     }
 }
+
 
 /* Grid */
 
@@ -349,6 +358,8 @@ section .wave.wave4
     margin-right: -35px;
     z-index: -1;
 }
+
+
 /* Button in bubble*/
 
 .button {
@@ -418,22 +429,7 @@ section .wave.wave4
 }
 
 .modal-trigger::-webkit-details-marker {
-  display:none;
-}
-
-/* Bubble Coordonnées */
-
-.bubble2 {
-    grid-row-start: 2;
-    grid-column-start: 1;
-}
-.bubble3 {
-    grid-row-start: 3;
-    grid-column-start: 1;
-}
-.bubble4 {
-    grid-row-start: 4;
-    grid-column-start: 1;
+  display: none;
 }
 
 
@@ -444,10 +440,14 @@ section .wave.wave4
     flex-wrap: wrap;
     border-top: 2px dotted teal;
     width: 100%;
-    margin: 0 10px;
-    background-color: #f8f9fa;
+    margin: 20px auto 0 auto;
+    background-color: #eeede7;
 }
 
+#formulaire h3 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
 #formulaire h2 {
     width: 100%;
 }
@@ -564,10 +564,12 @@ footer > div > ul > li > a {
         margin-top: 20%;
         margin-bottom: 10%;
     }
+
     .bubble .bubbleRightArrow {
         width: 24em;
         height: 24em;
     }
+
     .changeCircle {
         width: 600px;
         height: 600px;
@@ -575,6 +577,7 @@ footer > div > ul > li > a {
         padding: 0;
         transform: translate(-50%,-35%);
     }
+
     .title {
         text-align: center;
         display: flex;
@@ -614,6 +617,7 @@ footer > div > ul > li > a {
         z-index: -1;
         border: solid 1px red;
     }
+
 
     /* Bubbles Coordonées */
 
@@ -660,11 +664,13 @@ footer > div > ul > li > a {
 }
 
 @media only screen and (min-width:1200px) {
-    
-    /*menu burger disparaît en format desktop*/
+
+    /*  Menu burger disparaît en format desktop */
+
     #burgerMenuBar {
         display: none;
     }
+
     .burgerMenuCircle {
         display: none;
     }
@@ -674,7 +680,9 @@ footer > div > ul > li > a {
         height: 85px;
     }
 
-    /*bar de navigation + logo*/
+
+    /* Barre de navigation + logo */
+
     .navigation {
         width: 100%;
         height: 100%;
@@ -687,12 +695,12 @@ footer > div > ul > li > a {
         margin-left: 40px;
         font-size: 25px;
     }
-    
+
     .navCompetences {
         margin-left: 60px;
         margin-right: 20px;
     }
-    
+
     .wildLogo {
         width: 80px;
         position: absolute;
@@ -701,7 +709,9 @@ footer > div > ul > li > a {
         margin-top: 2px;
     }
 
-    /*titres*/
+
+    /* Titres */
+
     .title {
         text-align: center;
         display: flex;
@@ -723,7 +733,9 @@ footer > div > ul > li > a {
         font-size: 8em;
     }
 
-    /* grid */
+
+    /* Grid */
+
     #container {
         width: 100%;
         display: grid;
@@ -733,7 +745,8 @@ footer > div > ul > li > a {
         grid-gap: 4rem; 
     }
 
-    /* Bubbles & arrows */
+
+    /* Bubbles & Arrows */
 
     .rightArrow {
         position: relative;
@@ -746,6 +759,7 @@ footer > div > ul > li > a {
         height: 25em;
         background: rgb(99,146,176);
     }
+
     .rightArrow::after {
         content: '';
         position: absolute;
@@ -761,12 +775,14 @@ footer > div > ul > li > a {
         margin-right: -35px;
         z-index: -1;
     }
+
     .bubble {
         width: 35em;
         height: 35em;
         background: rgb(127,181,183);
         box-shadow: -9px -7px 11px 0px rgb(115, 154, 172);
     }
+
     .bubbleRightArrow {
         width: 35em;
         height: 35em;
@@ -817,7 +833,6 @@ footer > div > ul > li > a {
         grid-row-start: 6;
         grid-column-start: 2;
     }
-
     .bubble7 {
         grid-row-start: 7;
         grid-column-start: 1;
@@ -842,13 +857,18 @@ footer > div > ul > li > a {
 
     /* Contact */
 
+    #formulaire h3 {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
     #formulaire {
         display: flex;
         flex-wrap: wrap;
         border-top: 2px dotted teal;
-        width: 50%;
+        width: 60%;
         margin: 20px auto 10px auto;
-        background-color: #f8f9fa;
+        background-color: #eeede7 ;
     }
 
     #formulaire h2 {
@@ -866,7 +886,7 @@ footer > div > ul > li > a {
 
     .contact {
         display: inline-block;
-        width: 45%;
+        width: 35%;
     }
 
     .map {
