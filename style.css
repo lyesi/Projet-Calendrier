@@ -10,7 +10,6 @@ body {
 /* Barre de navigation */
 
 header {
-    width: 100%;
     height: 85px;
     background-color: rgb(99,146,176);
     box-shadow: -4px 1px 20px rgba(0,0,0,0.41)
@@ -166,27 +165,208 @@ header {
 }
 
 
-/* Frise */
+/* Frise -----------------------------------------------------------------*/
 
-.friseContainer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.frise {
+  /* The slider itself */
+  .slider {
+      /* https://stackoverflow.com/questions/15935837/how-to-display-a-range-input-slider-vertically */
+    -webkit-appearance: slider-vertical;  /* Override default CSS styles */
+    -moz-box-orient: vertical;
+    writing-mode: bt-lr;
+    appearance: none;
+    background: #b83434; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
     position: absolute;
-    background-color: rgb(31,34,41);
-    width: 10px;
-    height: 3500px;
-    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 24em;
+    height: calc(100% - 44em);
 }
+  
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 40px; /* Set a specific slider handle width */
+    height: 40px; /* Slider handle height */
+    border-radius: 50%;
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+
+  header {
+    width: 100%;
+    height: 85px;
+    background-color: rgb(99,146,176);
+    box-shadow: -4px 1px 20px rgba(0,0,0,0.41)
+  }
+  .title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Pour centrer le titre en plein milieu de son élément parent */
+    min-height: 30vh;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .title h1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(248,249,250);
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5em;
+  }
+  
+  .firstTitle {
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(31,34,41);
+  }
+  
+  .secondTitle {
+    color: #03a9f4;
+    -webkit-text-stroke: 2px rgb(31,34,41);
+    animation: animate 4s ease-in-out infinite;
+  }
+  
+  @keyframes animate {
+    0%,100% {
+        clip-path: polygon(0 24%, 11% 19%, 23% 16%, 34% 16%, 44% 18%, 56% 24%, 66% 25%, 76% 22%, 84% 19%, 94% 18%, 100% 20%, 100% 100%, 0 100%);
+    }
+    50% {
+        clip-path: polygon(0 27%, 8% 34%, 21% 36%, 33% 29%, 47% 25%, 60% 28%, 70% 33%, 79% 35%, 89% 34%, 95% 30%, 100% 24%, 100% 100%, 0 100%);
+    }
+  }
+  /*.subTitle {
+    font-size: 20px;
+  }*/
+  
+  .wildLogo {
+    width: 60px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  
+  
+  /* Menu Burger */
+  
+  #burgerMenuBar {
+    width: 40px;
+    height: 20px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 8px;
+    width: 100%;
+    background-color: rgb(31,34,41);
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .change .bar {
+    background-color: rgb(248,249,250);
+  }
+  
+  .change #bar1 {
+    transform: translateY(8px) rotateZ(-45deg);
+  }
+  
+  .change #bar3 {
+    transform: translateY(-8px) rotate(45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .navigation .nav .navContacts {
+    color: rgb(31,34,41);
+    text-decoration: none;
+  }
+  
+  .navigation .nav {
+    list-style-type: none;
+    padding: 16px 0;
+  }
+  
+  .navigation {
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  .nav:hover {
+    font-weight: bold;
+    color: rgb(31,34,41);
+    text-shadow: #CCC 2px 2px 18px;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .burgerMenuCircle {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle,rgb(99,146,176),rgb(99,146,176));
+    border-radius: 50%;
+    transition: 0.2s ease;
+    margin: 30px 0 20px 20px;
+  }
+  
+  .changeCircle {
+    width: 500px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%,-35%);
+  }
+  
+  .burgerMenuCircle, #burgerMenu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  #burgerMenu {
+    z-index: 2;
+    font-size: 22px;
+    transition: 1s ease;
+  }
 
 
 /* Grid */
 
 #container {
+    position: relative;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
