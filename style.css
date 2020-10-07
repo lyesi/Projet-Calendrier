@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    background-color: rgb(238,237,231);
+    background: linear-gradient(to bottom, #4DB4DB 0%, rgba(77,180,219,1) 20%, rgba(38,86,132,1) 100%);
     margin: 0;
     font-size: 1rem;
     color: rgb(31,34,41);
@@ -13,8 +13,8 @@ header {
     margin-top: -1px;
     width: 100%;
     height: 85px;
-    background-color:rgb(238,237,231);
-    box-shadow: -4px 1px 20px rgba(0,0,0,0.41);
+    background-color:rgb(255,255,255);
+    box-shadow: 0px 10px 36px 0px rgba(0,0,0,0.18);
 }
 
 .wildLogo {
@@ -73,7 +73,7 @@ header {
 }
 
 .navContacts:hover {
-    color: #03a9f4;
+    color: rgb(133,189,206);
     text-shadow: #CCC 2px 2px 18px;
 }
 
@@ -83,7 +83,7 @@ header {
 }
 
 .nav:hover {
-    color: #03a9f4;
+    color: rgb(133,189,206);
     text-shadow: #CCC 2px 2px 18px;
 }
 
@@ -101,7 +101,7 @@ header {
     z-index: 1;
     width: 0;
     height: 0;
-    background: radial-gradient(circle,rgb(99,146,176),rgb(99,146,176));
+    background: radial-gradient(circle,rgb(195,251,249,0.6),rgb(195,251,249));
     border-radius: 50%;
     transition: 0.2s ease;
     margin: 30px 0 20px 20px;
@@ -135,13 +135,12 @@ header {
     position: relative;
     font-family: 'Poppins', sans-serif;
     z-index: -1;
-    border: solid 1px red;
 }
 
 .title h1 {
     width: 100%;
     height: 100%;
-    background-color: rgb(127,181,183);
+    background-color: rgb(195,251,249);
     position: absolute;
     font-family: 'Poppins', sans-serif;
     font-size: 5em;
@@ -155,41 +154,16 @@ header {
 .secondTitle {
     color: #03a9f4;
     -webkit-text-stroke: 2px rgb(31,34,41);
-    animation: animate 4s ease-in-out infinite;
+    animation: animateTitle 4s ease-in-out infinite;
 }
 
-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: #3586ff;
-    overflow: hidden;
+.subTitle {
+    z-index: 0;
+    margin-top: 360px;
+    font-size: 26px;
 }
 
-.wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: url(images/wave.png);
-    background-size: 1000px 100px;
-}
-
-.wave1 {
-    animation: animate 30s linear infinite;
-}
-
-@keyframes animate {
-    0% {
-        background-position-x: 0;
-    }
-    100% {
-        background-position-x: 1000px;
-    }                                                                       
-}
-
-@keyframes animate {
+@keyframes animateTitle {
     0%,100% {
         clip-path: polygon(0 24%, 11% 19%, 23% 16%, 34% 16%, 44% 18%, 56% 24%, 66% 25%, 76% 22%, 84% 19%, 94% 18%, 100% 20%, 100% 100%, 0 100%);
     }
@@ -197,10 +171,6 @@ section {
         clip-path: polygon(0 27%, 8% 34%, 21% 36%, 33% 29%, 47% 25%, 60% 28%, 70% 33%, 79% 35%, 89% 34%, 95% 30%, 100% 24%, 100% 100%, 0 100%);
     }
 }
-
-/*.subTitle {
-    font-size: 20px;
-}*/
 
 /* Frise */
 
@@ -219,6 +189,84 @@ section {
     z-index: -4;
 }
 
+/*  Waves section */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background: rgb(195,251,249);
+    overflow: hidden;
+}
+section .wave
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url("images/waveBlue.png");
+    background-size: 1000px 100px;
+}
+section .wave.wave1
+{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+section .wave.wave2
+{
+    animation: animate2 10s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+section .wave.wave3
+{
+    animation: animate 8s linear infinite;
+    z-index: 998;
+    opacity: 0.4;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+section .wave.wave4
+{
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: -1000px;
+    }
+}
 
 /* Grid */
 
@@ -253,28 +301,9 @@ section {
     width: 20em;
     height: 20em;    
     background: rgb(127,181,183);
-    box-shadow: 5px 3px 7px 0px rgb(115, 154, 172);
-}
-
-.bubble::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 60px solid transparent;
-	border-right-color:rgb(127,181,183);
-	border-left: 0;
-	border-bottom: 0;
-	margin-top: -15px;
-    margin-left: -35px;
-    z-index: -1;
 }
 
 .bubbleRightArrow {
-    content:'';
-    position: relative;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -283,24 +312,8 @@ section {
     width: 20em;
     height: 20em;
     background: rgb(127,181,183);
-    box-shadow: -5px -3px 7px 0px rgb(115, 154, 172);
 }
 
-.bubbleRightArrow::after {
-	content: '';
-	position: absolute;
-	right: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 60px solid transparent;
-	border-left-color:rgb(127,181,183);
-	border-right: 0;
-	border-bottom: 0;
-	margin-top: -15px;
-    margin-right: -35px;
-    z-index: -1;
-}
 /* Button in bubble*/
 
 .button {
@@ -396,7 +409,7 @@ section {
     flex-wrap: wrap;
     border-top: 2px dotted teal;
     width: 100%;
-    margin: 0 10px;
+    margin: 0 0px;
     background-color: #f8f9fa;
 }
 
@@ -429,15 +442,15 @@ section {
 /* Footer */
 
 footer {
-    background-color: rgb(99,146,176);
+    background-color: rgb(255,255,255);
     margin-bottom: 0;
-    box-shadow:  -4px -1px 20px rgba(0,0,0,0.41);
+    box-shadow: 0px -10px 36px 0px rgba(0,0,0,0.18);
 }
 
 footer p {
     font-size: 1.3rem;
     text-align: center;
-    color: white;
+    color: rgb(133,189,206);
     padding: 20px 0 20px 0;
     margin: 0;
     opacity: .8;
@@ -511,7 +524,74 @@ footer > div > ul > li > a {
 
 /* Media queries */
 
-@media only screen and (min-width:768px) and (max-width:992px) {
+@media only screen and (min-width:364px) and (max-width:459px) {
+
+    /* titres */
+    .title h1 {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(195,251,249);
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        font-size: 5em;
+    }    
+
+    .subTitle {
+        z-index: 0;
+        margin-top: 190px;
+        font-size: 26px;
+    }
+}
+@media only screen and (min-width:460px) and (max-width:866px) {
+    
+    /* titres */
+    .title h1 {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(195,251,249);
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        font-size: 6em;
+    }
+
+    .subTitle {
+        position: absolute;
+        z-index: 0;
+        margin-top: 300px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width:867px) and (max-width:992px) {
+    
+    /* titres */
+    .title {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 220px;
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+        z-index: -1;
+    }
+
+    .title h1 {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(195,251,249);
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        font-size: 6em;
+    }
+
+    .subTitle {
+        z-index: 0;
+        margin-top: 100px;
+        margin-left: 380px;
+        font-size: 40px;
+    }
+    
     #container {
         margin-top: 20%;
         margin-bottom: 10%;
@@ -526,17 +606,6 @@ footer > div > ul > li > a {
         margin: 0;
         padding: 0;
         transform: translate(-50%,-35%);
-    }
-    .title {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center; /* Pour centrer le titre en plein milieu de son élément parent */
-        min-height: 220px;
-        position: relative;
-        font-family: 'Poppins', sans-serif;
-        z-index: -1;
-        border: solid 1px red;
     }
 }
 
@@ -561,21 +630,27 @@ footer > div > ul > li > a {
         text-align: center;
         display: flex;
         justify-content: center;
-        align-items: center; /* Pour centrer le titre en plein milieu de son élément parent */
+        align-items: center;
         min-height: 220px;
         position: relative;
         font-family: 'Poppins', sans-serif;
         z-index: -1;
-        border: solid 1px red;
     }
 
     .title h1 {
         width: 100%;
         height: 100%;
-        background-color: rgb(127,181,183);
+        background-color: rgb(195,251,249);
         position: absolute;
         font-family: 'Poppins', sans-serif;
         font-size: 6em;
+    }
+
+    .subTitle {
+        z-index: 0;
+        margin-top: 100px;
+        margin-left: 380px;
+        font-size: 40px;
     }
 
     /* Bubbles Coordonées */
@@ -674,16 +749,22 @@ footer > div > ul > li > a {
         position: relative;
         font-family: 'Poppins', sans-serif;
         z-index: -1;
-        border: solid 1px red;
     }
 
     .title h1 {
         width: 100%;
         height: 100%;
-        background-color: rgb(127,181,183);
+        background-color: rgb(195,251,249);
         position: absolute;
         font-family: 'Poppins', sans-serif;
         font-size: 8em;
+    }
+
+    .subTitle {
+        z-index: 0;
+        margin-top: 100px;
+        margin-left: 665px;
+        font-size: 40px;
     }
 
     /* grid */
@@ -728,13 +809,11 @@ footer > div > ul > li > a {
         width: 35em;
         height: 35em;
         background: rgb(127,181,183);
-        box-shadow: -9px -7px 11px 0px rgb(115, 154, 172);
     }
     .bubbleRightArrow {
         width: 35em;
         height: 35em;
         background: rgb(127,181,183);
-        box-shadow: -9px -7px 11px 0px rgb(115, 154, 172);
     }
 
     .bubble::after {
