@@ -171,52 +171,43 @@ header {
     }
 }
 
-/* Frise -----------------------------------------------------------------*/
+/* Mouettes */
 
-  /* The slider itself */
-  .slider {
-      /* https://stackoverflow.com/questions/15935837/how-to-display-a-range-input-slider-vertically */
-    -webkit-appearance: slider-vertical;  /* Override default CSS styles */
-    -moz-box-orient: vertical;
-    writing-mode: bt-lr;
-    appearance: none;
-    background: #b83434; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
+.mouettesParent {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 24em;
-    height: calc(100% - 44em);
+    width: 100%;
+    margin-top: 40px;
+    z-index: 1;
 }
-  
-  
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    width: 40px; /* Set a specific slider handle width */
-    height: 40px; /* Slider handle height */
-    border-radius: 50%;
-    background: #4CAF50; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #4CAF50; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
 
-/*  Waves section */
-*
-{
-    margin: 0;
-    padding: 0;
+.mouettes {
+    width: 100px;
+    float: right;
 }
+
+.mouette1 {
+    position: relative;
+    bottom: 80px;
+    right: 50px;
+}
+
+.mouette2 {
+    position: relative;
+    top: 50px;
+    right: 120px;
+}
+
+.mouette4 {
+    position: relative;
+    right: 180px;}
+
+.mouette3 {
+    position: relative;
+    bottom: 60px;
+    right: 450px;
+}
+
+/* Vagues */
 
 section
 {
@@ -298,6 +289,52 @@ section .wave.wave4
     }
 }
 
+/* Frise -----------------------------------------------------------------*/
+
+  /* The slider itself */
+  .slider {
+      /* https://stackoverflow.com/questions/15935837/how-to-display-a-range-input-slider-vertically */
+    -webkit-appearance: slider-vertical;  /* Override default CSS styles */
+    -moz-box-orient: vertical;
+    writing-mode: bt-lr;
+    appearance: none;
+    background: #b83434; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 24em;
+    height: calc(100% - 44em);
+}
+  
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 40px; /* Set a specific slider handle width */
+    height: 40px; /* Slider handle height */
+    border-radius: 50%;
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+/*  Waves section */
+*
+{
+    margin: 0;
+    padding: 0;
+}
 
 /* Grid */
 
@@ -544,6 +581,30 @@ footer > div > ul > li > a {
 
 /* Media queries */
 
+@media only screen and (min-width:320px) and (max-width:363px) {
+
+    .mouettes {
+        width: 100px;
+        float: right;
+    }
+
+    .mouette1 {
+        display: none;
+    }
+
+    .mouette2 {
+        display: none;
+    }
+
+    .mouette4 {
+        position: relative;
+        right: 80px;}
+
+    .mouette3 {
+        display: none;
+    }
+}
+
 @media only screen and (min-width:364px) and (max-width:459px) {
 
     /* titres */
@@ -561,6 +622,28 @@ footer > div > ul > li > a {
         margin-top: 190px;
         font-size: 26px;
     }
+
+    /* Mouettes */
+
+    .mouette1 {
+        position: relative;
+        top: 1px;
+        right: 50px;
+    }
+
+    .mouette2 {
+        display: none;
+    }
+    
+    .mouette4 {
+        position: relative;
+        top: 30px;
+        right: 100px;
+    }
+    
+    .mouette3 {
+        display: none;
+    }   
 }
 @media only screen and (min-width:460px) and (max-width:866px) {
     
@@ -580,6 +663,28 @@ footer > div > ul > li > a {
         margin-top: 300px;
         font-size: 30px;
     }
+
+    /* Mouettes */
+
+    .mouette1 {
+        position: relative;
+        top: 1px;
+        right: 50px;
+    }
+
+    .mouette2 {
+        position: relative;
+        top: 50px;
+        right: 120px;
+    }
+    
+    .mouette4 {
+        position: relative;
+        right: 120px;}
+    
+    .mouette3 {
+        display: none;
+    }   
 }
 
 @media only screen and (min-width:867px) and (max-width:992px) {
@@ -612,6 +717,30 @@ footer > div > ul > li > a {
         font-size: 40px;
     }
     
+    /* Mouettes */
+
+    .mouette1 {
+        position: relative;
+        bottom: 80px;
+        right: 50px;
+    }
+    
+    .mouette2 {
+        position: relative;
+        top: 50px;
+        right: 120px;
+    }
+    
+    .mouette4 {
+        position: relative;
+        right: 180px;}
+
+    .mouette3 {
+        position: relative;
+        bottom: 60px;
+        right: 230px;
+    }   
+
     #container {
         margin-top: 20%;
         margin-bottom: 10%;
@@ -675,6 +804,30 @@ footer > div > ul > li > a {
         font-size: 40px;
     }
 
+    /* Mouettes */
+
+    .mouette1 {
+        position: relative;
+        bottom: 80px;
+        right: 50px;
+    }
+    
+    .mouette2 {
+        position: relative;
+        top: 50px;
+        right: 120px;
+    }
+    
+    .mouette4 {
+        position: relative;
+        right: 180px;
+    }
+
+    .mouette3 {
+        position: relative;
+        bottom: 60px;
+        right: 230px;
+    }   
 
     /* Bubbles Coordonées */
 
@@ -737,7 +890,6 @@ footer > div > ul > li > a {
         height: 85px;
     }
 
-
     /* Barre de navigation + logo */
 
     .navigation {
@@ -796,6 +948,30 @@ footer > div > ul > li > a {
         font-size: 40px;
     }
     
+    /* Mouettes */
+    
+    .mouette1 {
+        position: relative;
+        bottom: 80px;
+        right: 50px;
+    }
+    
+    .mouette2 {
+        position: relative;
+        top: 50px;
+        right: 120px;
+    }
+    
+    .mouette4 {
+        position: relative;
+        right: 180px;}
+    
+    .mouette3 {
+        position: relative;
+        bottom: 60px;
+        right: 450px;
+    }
+
     /* Grid */
 
     #container {
