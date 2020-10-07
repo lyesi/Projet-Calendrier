@@ -171,22 +171,48 @@ header {
     }
 }
 
-/* Frise */
+/* Frise -----------------------------------------------------------------*/
 
-.friseContainer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.frise {
+  /* The slider itself */
+  .slider {
+      /* https://stackoverflow.com/questions/15935837/how-to-display-a-range-input-slider-vertically */
+    -webkit-appearance: slider-vertical;  /* Override default CSS styles */
+    -moz-box-orient: vertical;
+    writing-mode: bt-lr;
+    appearance: none;
+    background: #b83434; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
     position: absolute;
-    background-color: rgb(31,34,41);
-    width: 10px;
-    height: 3500px;
-    z-index: -4;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 24em;
+    height: calc(100% - 44em);
 }
+  
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 40px; /* Set a specific slider handle width */
+    height: 40px; /* Slider handle height */
+    border-radius: 50%;
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+
+ 
 
 /*  Waves section */
 *
@@ -279,6 +305,7 @@ section .wave.wave4
 /* Grid */
 
 #container {
+    position: relative;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
