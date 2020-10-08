@@ -162,7 +162,7 @@ header {
 
 .subTitle {
     z-index: 0;
-    margin-top: 360px;
+    margin-top: 300px;
     font-size: 26px;
 }
 
@@ -405,7 +405,7 @@ header {
     align-items: center;
 }
 h2{
-    padding-top: 40px;
+    padding-top: 80px;
 }
 .bubbleText {
     margin: auto;
@@ -413,27 +413,8 @@ h2{
     text-align: center;
     font-size: 16px;
     width: 80%;
-    padding-top: 16px;
+    margin-top: 20px;
 }
-
-/* .bubbleText {
-    text-align: center;
-    font-size: 18px;
-    padding: 20px;
-    width: 200px;
-}
-
-.bubble {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    width: 17em;
-    height: 17em;    
-    background: rgb(127,181,183);
-} 
-*/
 
 /* Button in bubble*/
 .buttonnnnn{
@@ -470,8 +451,7 @@ h2{
     
 }
 
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
     --lightness: 40%;
 }
 
@@ -493,7 +473,7 @@ h2{
     background: rgba(27,31,35,0.5);
 }
   
-  .modal-content {
+.modal-content {
     margin: 0;
     position: fixed;
     top: 50%;
@@ -543,6 +523,7 @@ h2{
 #formulaire textarea {
     width: 244px;
     margin-top: 10px;
+    border-radius: 10px;
 }
 
 #formulaire label {
@@ -553,6 +534,7 @@ h2{
 
 #formulaire input {
     margin-bottom: 5px;
+    border-radius: 5px;
 }
 
 #formulaire button {
@@ -571,6 +553,7 @@ h2{
 #formulaire iframe {
     width: 100%;
     height: 200px;
+    border-radius: 10px;
 }
 
 /* Footer */
@@ -709,7 +692,7 @@ footer > div > ul > li > a {
 
     .subTitle {
         z-index: 0;
-        margin-top: 190px;
+        margin-top: 170px;
         font-size: 26px;
     }
     
@@ -764,7 +747,7 @@ footer > div > ul > li > a {
     .subTitle {
         position: absolute;
         z-index: 0;
-        margin-top: 250px;
+        margin-top: 200px;
         font-size: 30px;
     }
 
@@ -798,7 +781,12 @@ footer > div > ul > li > a {
     
     .mouette3 {
         display: none;
-    }   
+    }
+
+    .bubble {
+        width: 24em;
+        height: 24em;
+    }
 }
 
 @media only screen and (min-width:867px) and (max-width:992px) {
@@ -834,7 +822,7 @@ footer > div > ul > li > a {
     /*Slide------------*/
 
     .slider {
-      left: 50%;
+      left: 7%;
       transform: translateX(-50%);
       width: 7px;
       top: 9em;
@@ -871,8 +859,8 @@ footer > div > ul > li > a {
     }
 
     .bubble {
-        width: 24em;
-        height: 24em;
+        width: 25em;
+        height: 25em;
     }
 
     .changeCircle {
@@ -1239,8 +1227,8 @@ footer > div > ul > li > a {
            background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%); 
         }
     .bubble {
-        width: 25em;
-        height: 25em;
+        width: 30em;
+        height: 30em;
     }
 
     .bubbleText {
