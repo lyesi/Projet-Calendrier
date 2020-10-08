@@ -364,7 +364,53 @@ section .wave.wave4
 
 /* Bubbles */
 
+.ball {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    position: relative;
+    background: radial-gradient(circle at bottom, #81e8f6, #76deef 10%, #055194 80%, #062745 100%); 
+    z-index: -2;
+}
+ .ball:after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+    -webkit-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg); 
+    z-index: -1;
+ }
+ 
+  .ball.plain:before, .ball.plain:after {
+       display: none; 
+    }
+    .ball.bubble {
+       background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9) 40%, rgba(225, 238, 255, 0.8) 60%, rgba(43, 130, 255, 0.4)); 
+    }
+    .ball.bubble:after {
+       display: block;
+       background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%); 
+    }
+.bubble {
+    width: 18em;
+    height: 18em;
+    text-align: center;
+}
+
 .bubbleText {
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+}
+
+/* .bubbleText {
     text-align: center;
     font-size: 18px;
     padding: 20px;
@@ -372,8 +418,6 @@ section .wave.wave4
 }
 
 .bubble {
-    content: '';
-    position: relative;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -382,21 +426,14 @@ section .wave.wave4
     width: 20em;
     height: 20em;    
     background: rgb(127,181,183);
-}
+} 
+*/
 
-.bubbleRightArrow {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    width: 20em;
-    height: 20em;
-    background: rgb(127,181,183);
-}
 /* Button in bubble*/
 
 .button {
+    width: 55px;
+    height: 55px;
     cursor: pointer;
     display: inline-block;
     border: none;
@@ -632,6 +669,7 @@ footer > div > ul > li > a {
 @media only screen and (min-width:364px) and (max-width:459px) {
 
     /* titres */
+
     .title h1 {
         width: 100%;
         height: 100%;
@@ -645,6 +683,20 @@ footer > div > ul > li > a {
         z-index: 0;
         margin-top: 190px;
         font-size: 26px;
+    }
+    
+    /* Bubbles */
+    
+    .bubble {
+        width: 20em;
+        height: 20em;
+    }
+
+    .bubbleText {
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+        width: 200px;
     }
 
     /* Mouettes */
@@ -770,7 +822,7 @@ footer > div > ul > li > a {
         margin-bottom: 10%;
     }
 
-    .bubble .bubbleRightArrow {
+    .bubble {
         width: 24em;
         height: 24em;
     }
@@ -789,9 +841,43 @@ footer > div > ul > li > a {
         grid-template-columns: 1fr 1fr;
         grid-gap: 4rem; 
     } 
+    .ball {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        position: relative;
+        background: radial-gradient(circle at bottom, #81e8f6, #76deef 10%, #055194 80%, #062745 100%); 
+        z-index: -2;
+    }
+    .ball:after {
+        content: "";
+        position: absolute;
+        display: none;
+        top: 5%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        border-radius: 100%;
+        -webkit-filter: blur(1px);
+        filter: blur(1px);
+        -webkit-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg); 
+        z-index: -1;
+    }
+     
+    .ball.plain:before, .ball.plain:after {
+        display: none; 
+    }
+    .ball.bubble {
+        background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9) 40%, rgba(225, 238, 255, 0.8) 60%, rgba(43, 130, 255, 0.4)); 
+    }
+    .ball.bubble:after {
+        display: block;
+        background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%); 
+    }
     .bubble {
-        width: 25em;
-        height: 25em;
+        width: 22em;
+        height: 22em;
     }
     .bubbleText {
         text-align: center;
@@ -1060,62 +1146,44 @@ footer > div > ul > li > a {
     }
 
 
-    /* Bubbles & Arrows */
-
-    .rightArrow {
+    /* Bubbles */
+    .ball {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
         position: relative;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
+        background: radial-gradient(circle at bottom, #81e8f6, #76deef 10%, #055194 80%, #062745 100%); 
+        z-index: -2;
+    }
+     .ball:after {
+        content: "";
+        position: absolute;
+        display: none;
+        top: 5%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        border-radius: 100%;
+        -webkit-filter: blur(1px);
+        filter: blur(1px);
+        -webkit-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg); 
+        z-index: -1;
+     }
+     
+      .ball.plain:before, .ball.plain:after {
+           display: none; 
+        }
+        .ball.bubble {
+           background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9) 40%, rgba(225, 238, 255, 0.8) 60%, rgba(43, 130, 255, 0.4)); 
+        }
+        .ball.bubble:after {
+           display: block;
+           background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%); 
+        }
+    .bubble {
         width: 25em;
         height: 25em;
-        background: rgb(99,146,176);
-    }
-
-    .rightArrow::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 50%;
-        width: 0;
-        height: 0;
-        border: 60px solid transparent;
-        border-left-color: rgb(99,146,176);
-        border-right: 0;
-        border-bottom: 0;
-        margin-top: -15px;
-        margin-right: -35px;
-        z-index: -1;
-    }
-
-    .bubble {
-        width: 35em;
-        height: 35em;
-        background: rgb(127,181,183);
-    }
-
-    .bubbleRightArrow {
-        width: 35em;
-        height: 35em;
-        background: rgb(127,181,183);
-    }
-
-    .bubble::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 0;
-        height: 0;
-        border: 60px solid transparent;
-        border-right-color:rgb(127,181,183);
-        border-left: 0;
-        border-bottom: 0;
-        margin-top: -15px;
-        margin-left: -35px;
-        z-index: -1;
     }
 
     .bubbleText {
