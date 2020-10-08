@@ -309,7 +309,7 @@ section .wave.wave4
     -webkit-appearance: slider-vertical;  /* Override default CSS styles */
     -moz-box-orient: vertical;
     writing-mode: bt-lr;
-    background: #b83434; /* Grey background */
+    background: #b0b4b4; /* Grey background */
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
@@ -335,9 +335,9 @@ section .wave.wave4
   }
   
   .slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #4CAF50; /* Green background */
+    width: 8px; /* Set a specific slider handle width */
+    height: 8px; /* Slider handle height */
+    background: #7fb6bd; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
 
