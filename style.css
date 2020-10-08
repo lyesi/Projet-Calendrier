@@ -217,6 +217,7 @@ header {
     position: absolute;
     z-index: 1;
     margin-left: -100px;
+    bottom: -200px;
 }
 
 /* Vagues */
@@ -311,7 +312,7 @@ header {
 
   /* The slider itself */
 .slider {
-      /* https://stackoverflow.com/questions/15935837/how-to-display-a-range-input-slider-vertically */
+    /* https://stackoverflow.com/questions/15935837/how-to-display-a-range-input-slider-vertically */
     -webkit-appearance: slider-vertical;  /* Override default CSS styles */
     -moz-box-orient: vertical;
     /*writing-mode: bt-lr;*/
@@ -333,17 +334,18 @@ header {
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
-    width: 40px; /* Set a specific slider handle width */
-    height: 40px; /* Slider handle height */
+    width: 150px; /* Set a specific slider handle width */
+    height: 150px; /* Slider handle height */
     border-radius: 50%;
-    background: #4CAF50; /* Green background */
+    background: red; /* Green background */
     cursor: pointer; /* Cursor on hover */
 }
   
-  .slider::-moz-range-thumb {
-    width: 8px; /* Set a specific slider handle width */
-    height: 8px; /* Slider handle height */
-    background: #7fb6bd; /* Green background */
+.slider::-moz-range-thumb {
+    appearance: none;
+    width: 100px; /* Set a specific slider handle width */
+    height: 100px; /* Slider handle height */
+    background: red; /* Green background */
     cursor: pointer; /* Cursor on hover */
 }
 
@@ -392,7 +394,7 @@ header {
     display: none; 
 }
 .ball.bubble {
-    background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9) 40%, rgba(225, 238, 255, 0.8) 60%, rgba(43, 130, 255, 0.4)); 
+    background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.2), rgba(240, 245, 255, 0.2) 40%, rgba(225, 238, 255, 0.2) 60%, rgba(43, 130, 255, 0.2)); 
 }
 .ball.bubble:after {
     display: block;
@@ -417,16 +419,7 @@ h2{
 }
 
 /* Button in bubble*/
-.buttonnnnn{
-    width: 160px;
-    border-radius: 20px;
-    border: 1px solid black;
-    background-color: transparent;
-    text-decoration: none;
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-}
+
 .button {
     width: 160px;
     border-radius: 20px;
@@ -730,7 +723,16 @@ footer > div > ul > li > a {
     
     .mouette3 {
         display: none;
-    }   
+    }
+
+    /* Ponton */
+    .ponton {
+        position: absolute;
+        z-index: 1;
+        margin-left: -100px;
+        bottom: -40px;
+    }
+
 }
 @media only screen and (min-width:460px) and (max-width:866px) {
     
@@ -781,6 +783,14 @@ footer > div > ul > li > a {
     
     .mouette3 {
         display: none;
+    }
+
+    /* Ponton */
+    .ponton {
+        position: absolute;
+        z-index: 1;
+        margin-left: -100px;
+        bottom: -80px;
     }
 
     .bubble {
@@ -853,6 +863,14 @@ footer > div > ul > li > a {
         right: 230px;
     }   
 
+    /* Ponton */
+    .ponton {
+        position: absolute;
+        z-index: 1;
+        margin-left: -100px;
+        bottom: -40px;
+    }
+
     #container {
         margin-top: 20%;
         margin-bottom: 10%;
@@ -905,8 +923,7 @@ footer > div > ul > li > a {
         display: none; 
     }
     .ball.bubble {
-        background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9) 40%, rgba(225, 238, 255, 0.8) 60%, rgba(43, 130, 255, 0.4)); 
-    }
+        background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.2), rgba(240, 245, 255, 0.2) 40%, rgba(225, 238, 255, 0.2) 60%, rgba(43, 130, 255, 0.2));    }
     .ball.bubble:after {
         display: block;
         background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%); 
@@ -983,6 +1000,14 @@ footer > div > ul > li > a {
         right: 230px;
     }   
 
+    /* Ponton */
+    .ponton {
+        position: absolute;
+        z-index: 1;
+        margin-left: -100px;
+        bottom: 0;
+    }
+    
     /* Bubbles Coordonées */
 
     .bubble2 {
@@ -1097,7 +1122,7 @@ footer > div > ul > li > a {
     }
 
     /* Barre de navigation + logo */
-
+    
     .navigation {
         width: 100%;
         height: 100%;
@@ -1116,6 +1141,56 @@ footer > div > ul > li > a {
         margin-right: 20px;
     }
 
+    /* Listes déroulantes */
+    
+    .topListDates li {
+        list-style-type: none;
+        background-color: rgb(255,255,255);
+        color: rgb(31,34,41);
+        padding-top: 15px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        border-top: solid 2px rgb(151,178,190);
+        font-size: 18px;
+    }
+ 
+    .topListDates ul     {
+        display: none;
+    }
+
+    .topListDates:hover ul {
+        display: block;
+    }
+
+    .topListDates ul li a {
+        text-decoration: none;
+        color: rgb(31,34,41);
+    }
+
+    .topListSkills li {
+        list-style-type: none;
+        background-color: rgb(255,255,255);
+        color: rgb(31,34,41);
+        padding-top: 15px;
+        padding-bottom: 5px;
+        padding-left: 4px;
+        border-top: solid 2px rgb(151,178,190);
+        font-size: 18px;
+    }
+ 
+    .topListSkills ul     {
+        display: none;
+    }
+
+    .topListSkills:hover ul {
+        display: block;
+    }
+
+    .topListSkills ul li a {
+        text-decoration: none;
+        color: rgb(31,34,41);
+    }
+
     .wildLogo {
         width: 80px;
         position: absolute;
@@ -1123,7 +1198,6 @@ footer > div > ul > li > a {
         margin-right: 20px;
         margin-top: 2px;
     }
-
 
     /* Titres */
 
@@ -1187,6 +1261,14 @@ footer > div > ul > li > a {
         right: 450px;
     }
 
+    /* Ponton */
+    .ponton {
+        position: absolute;
+        z-index: 1;
+        margin-left: -100px;
+        top: 450px;
+    }
+
     /* Grid */
 
     #container {
@@ -1198,9 +1280,8 @@ footer > div > ul > li > a {
         grid-gap: 4rem; 
     }
 
-
     /* Bubbles */
-     .ball:after {
+    .ball:after {
         content: "";
         position: absolute;
         display: none;
@@ -1214,18 +1295,19 @@ footer > div > ul > li > a {
         -webkit-transform: rotateZ(-30deg);
         transform: rotateZ(-30deg); 
         z-index: -1;
-     }
+    }
      
-      .ball.plain:before, .ball.plain:after {
+    .ball.plain:before, .ball.plain:after {
            display: none; 
-        }
-        .ball.bubble {
-           background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9) 40%, rgba(225, 238, 255, 0.8) 60%, rgba(43, 130, 255, 0.4)); 
-        }
-        .ball.bubble:after {
-           display: block;
-           background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%); 
-        }
+    }
+
+    .ball.bubble {
+        background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.3), rgba(240, 245, 255, 0.3) 40%, rgba(225, 238, 255, 0.3) 60%, rgba(43, 130, 255, 0.3));    }
+    .ball.bubble:after {
+        display: block;
+        background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%); 
+    }
+
     .bubble {
         width: 30em;
         height: 30em;
