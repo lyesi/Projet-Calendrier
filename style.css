@@ -221,7 +221,13 @@ header {
 
 /* Vagues */
 
-section
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.sea
 {
     position: relative;
     width: 100%;
@@ -230,7 +236,7 @@ section
     overflow: hidden;
 }
 
-section .wave
+.sea .wave
 {
     position: absolute;
     bottom: 0;
@@ -241,7 +247,7 @@ section .wave
     background-size: 1000px 100px;
 }
 
-section .wave.wave1
+.sea .wave.wave1
 {
     animation: animate 30s linear infinite;
     z-index: 4;
@@ -250,7 +256,7 @@ section .wave.wave1
     bottom: 0;
 }
 
-section .wave.wave2
+.sea .wave.wave2
 {
     animation: animate2 10s linear infinite;
     z-index: 3;
@@ -259,7 +265,7 @@ section .wave.wave2
     bottom: 10px;
 }
 
-section .wave.wave3
+.sea .wave.wave3
 {
     animation: animate 8s linear infinite;
     z-index: 2;
@@ -268,7 +274,7 @@ section .wave.wave3
     bottom: 15px;
 }
 
-section .wave.wave4
+.sea .wave.wave4
 {
     animation: animate2 5s linear infinite;
     z-index: 1;
@@ -304,7 +310,7 @@ section .wave.wave4
 /* Frise -----------------------------------------------------------------*/
 
   /* The slider itself */
-  .slider {
+.slider {
       /* https://stackoverflow.com/questions/15935837/how-to-display-a-range-input-slider-vertically */
     -webkit-appearance: slider-vertical;  /* Override default CSS styles */
     -moz-box-orient: vertical;
@@ -324,7 +330,7 @@ section .wave.wave4
   
   
   /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-  .slider::-webkit-slider-thumb {
+.slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
     width: 40px; /* Set a specific slider handle width */
@@ -332,20 +338,13 @@ section .wave.wave4
     border-radius: 50%;
     background: #4CAF50; /* Green background */
     cursor: pointer; /* Cursor on hover */
-  }
+}
   
-  .slider::-moz-range-thumb {
+.slider::-moz-range-thumb {
     width: 25px; /* Set a specific slider handle width */
     height: 25px; /* Slider handle height */
     background: #4CAF50; /* Green background */
     cursor: pointer; /* Cursor on hover */
-  }
-
-/*  Waves section */
-*
-{
-    margin: 0;
-    padding: 0;
 }
 
 /* Grid */
@@ -361,7 +360,6 @@ section .wave.wave4
     margin-top: 120px;
 }
 
-
 /* Bubbles */
 
 .bubbleText {
@@ -372,8 +370,6 @@ section .wave.wave4
 }
 
 .bubble {
-    content: '';
-    position: relative;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -384,16 +380,6 @@ section .wave.wave4
     background: rgb(127,181,183);
 }
 
-.bubbleRightArrow {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    width: 20em;
-    height: 20em;
-    background: rgb(127,181,183);
-}
 /* Button in bubble*/
 
 .button {
@@ -602,7 +588,6 @@ footer > div > ul > li > a {
     color: white;
 }
 
-
 /* Media queries */
 
 @media only screen and (min-width:320px) and (max-width:363px) {
@@ -768,11 +753,6 @@ footer > div > ul > li > a {
     #container {
         margin-top: 20%;
         margin-bottom: 10%;
-    }
-
-    .bubble .bubbleRightArrow {
-        width: 24em;
-        height: 24em;
     }
 
     .changeCircle {
@@ -1062,60 +1042,10 @@ footer > div > ul > li > a {
 
     /* Bubbles & Arrows */
 
-    .rightArrow {
-        position: relative;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        width: 25em;
-        height: 25em;
-        background: rgb(99,146,176);
-    }
-
-    .rightArrow::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 50%;
-        width: 0;
-        height: 0;
-        border: 60px solid transparent;
-        border-left-color: rgb(99,146,176);
-        border-right: 0;
-        border-bottom: 0;
-        margin-top: -15px;
-        margin-right: -35px;
-        z-index: -1;
-    }
-
     .bubble {
         width: 35em;
         height: 35em;
         background: rgb(127,181,183);
-    }
-
-    .bubbleRightArrow {
-        width: 35em;
-        height: 35em;
-        background: rgb(127,181,183);
-    }
-
-    .bubble::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 0;
-        height: 0;
-        border: 60px solid transparent;
-        border-right-color:rgb(127,181,183);
-        border-left: 0;
-        border-bottom: 0;
-        margin-top: -15px;
-        margin-left: -35px;
-        z-index: -1;
     }
 
     .bubbleText {
