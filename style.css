@@ -308,7 +308,7 @@ section .wave.wave4
       /* https://stackoverflow.com/questions/15935837/how-to-display-a-range-input-slider-vertically */
     -webkit-appearance: slider-vertical;  /* Override default CSS styles */
     -moz-box-orient: vertical;
-    writing-mode: bt-lr;
+    /*writing-mode: bt-lr;*/
     background: #b0b4b4; /* Grey background */
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
@@ -370,7 +370,8 @@ section .wave.wave4
     border-radius: 100%;
     position: relative;
     background: radial-gradient(circle at bottom, #81e8f6, #76deef 10%, #055194 80%, #062745 100%); 
-    z-index: -2;
+    text-align: center;
+    align-items: center;
 }
  .ball:after {
     content: "";
@@ -402,12 +403,18 @@ section .wave.wave4
     width: 18em;
     height: 18em;
     text-align: center;
+    align-items: center;
 }
-
+h2{
+    padding-top: 40px;
+}
 .bubbleText {
+    margin: auto;
+    align-items: center;
     text-align: center;
     font-size: 16px;
-    padding: 20px;
+    width: 80%;
+    padding-top: 16px;
 }
 
 /* .bubbleText {
@@ -430,13 +437,22 @@ section .wave.wave4
 */
 
 /* Button in bubble*/
-
+.buttonnnnn{
+    width: 160px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
 .button {
-    width: 55px;
-    height: 55px;
+    width: 160px;
+    border-radius: 20px;
     cursor: pointer;
     display: inline-block;
-    border: none;
+    border: 1px solid rgba(38, 177, 172, 0.6);
     margin: 0;
     text-decoration: none;
     text-align: center;
@@ -445,13 +461,14 @@ section .wave.wave4
     -webkit-appearance: none;
     -moz-appearance: none;
     font-family: sans-serif;
-    padding: 1rem 2rem;
+    padding: 1rem;
     font-size: 1rem;
     --hue: 220;
     --saturation: 100%;
     --lightness: 50%;
-    background: hsl(var(--hue), var(--saturation), var(--lightness));
+    /*background: hsl(var(--hue), var(--saturation), var(--lightness));*/
     color: #ffffff;
+    
 }
 
 .button:hover,
@@ -1182,14 +1199,6 @@ footer > div > ul > li > a {
 
 
     /* Bubbles */
-    .ball {
-        width: 100%;
-        height: 100%;
-        border-radius: 100%;
-        position: relative;
-        background: radial-gradient(circle at bottom, #81e8f6, #76deef 10%, #055194 80%, #062745 100%); 
-        z-index: -2;
-    }
      .ball:after {
         content: "";
         position: absolute;
