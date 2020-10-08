@@ -679,6 +679,14 @@ footer > div > ul > li > a {
         font-size: 30px;
     }
 
+    /*Slider-------------*/
+    .slider {
+        left: 7%;
+        width: 12px;
+        top: 9em;
+        height: calc(100% - 17em);
+    }
+
     /* Mouettes */
 
     .mouette1 {
@@ -732,6 +740,16 @@ footer > div > ul > li > a {
         font-size: 40px;
     }
     
+    /*Slide------------*/
+
+    .slider {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 7px;
+      top: 9em;
+      height: calc(100% - 17em);
+    }
+
     /* Mouettes */
 
     .mouette1 {
@@ -818,6 +836,14 @@ footer > div > ul > li > a {
         margin-left: 380px;
         font-size: 40px;
     }
+    /*Slide------*/
+    .slider {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 7px;
+        top: 9em;
+        height: calc(100% - 17em);
+      }
 
     /* Mouettes */
 
@@ -1015,6 +1041,15 @@ footer > div > ul > li > a {
         font-size: 40px;
     }
     
+     /*Slide------*/
+     .slider {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 7px;
+        top: 9em;
+        height: calc(100% - 17em);
+      }
+
     /* Mouettes */
     
     .mouette1 {
