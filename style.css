@@ -673,7 +673,9 @@ footer > div > ul > li > a {
 
     .mouette4 {
         position: relative;
-        right: 80px;}
+        right: 150px;
+        top: 80px;
+    }
 
     .mouette3 {
         display: none;
@@ -727,8 +729,8 @@ footer > div > ul > li > a {
     
     .mouette4 {
         position: relative;
-        top: 30px;
-        right: 100px;
+        right: 150px;
+        top: 80px;
     }
     
     .mouette3 {
@@ -778,7 +780,9 @@ footer > div > ul > li > a {
     
     .mouette4 {
         position: relative;
-        right: 120px;}
+        right: 150px;
+        bottom: 30px;
+    }
     
     .mouette3 {
         display: none;
