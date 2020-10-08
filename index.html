@@ -17,25 +17,38 @@
 <body>
     <header>
         <nav id="burgerMenu">
+            <!-- Menu burger -->
             <div id="burgerMenuBar" onclick="onClickMenu()">
                 <div id="bar1" class="bar"></div>
                 <div id="bar2" class="bar"></div>
                 <div id="bar3" class="bar"></div>
             </div>
+            <!-- Bar de navigation -->
             <ul class="navigation" id="navigation"> 
                 <li class="nav">Dates clefs</li>
                 <li class="nav navCompetences">Compétences</li>
                 <li class="nav"><a class="navContacts" href="contacts">Contacts</a></li>
             </ul>
         </nav>
+        <!-- Menu burger avec animation (quand on clique dessus) -->
         <div class="burgerMenuCircle" id="burgerMenuCircle"></div>
+        <!-- Logo de la wild -->
         <img alt="wildLogo" class="wildLogo" src="images/wildlogoBlue.png">
     </header> 
+    <!-- Titre avec animation et sous-titre -->
     <div class="title">
         <h1 class="firstTitle">Dive into the Wild</h1>
         <h1 class="secondTitle">Dive into the Wild</h1>
         <h2 class="subTitle">Ton parcours de Wilder</h2>
     </div>
+    <!-- Images de mouettes -->
+    <div class="mouettesParent">
+        <img alt="mouette1" class="mouettes mouette1" src="images/mouette1.png">
+        <img alt="mouette2" class="mouettes mouette2" src="images/mouette2.png">
+        <img alt="mouette4" class="mouettes mouette4" src="images/mouette4.png">
+        <img alt="mouette3" class="mouettes mouette3" src="images/mouette3.png">
+    </div>
+    <img alt="ponton" class="ponton" src="images/ponton.png">
     <!-- Waves section -->
     <section>
         <div class="wave wave1"></div>
@@ -44,17 +57,15 @@
         <div class="wave wave4"></div>
     </section>
     <!-- End of waves section -->
-    <!-- <div class="friseContainer">
-        <div class="frise">
-        </div>
-    </div>   -->
+    
+    
 
     <div id="container">
         <input type="range" min="1" max="272" value="1" class="slider" id="myRange" disabled>
 
-        <div class="bubble1 bubbleRightArrow">
+        <div class="bubble1 bubble rightArrow">
             <h2>Entrez dans le bain :</h2>
-            <p class="bubbleText">Entrez dans le bain :
+            <p class="bubbleText">
                 Entrer dans le monde du code, c'est comme faire un saut dans le grand bain.
             Ici nous te prensentont le deroulé de ce plongeon dans la vie de developpeur.</p>
             <details class="modal">
@@ -72,7 +83,7 @@
                 <p class="modal-content">Something jkdfghjkkljk hjgfgf hgjklljkh jgh jfghjj ghfg dfgfjh gkhhjghghjk  vbjgg jfgjh</p>
             </details>
         </div>
-        <div class="bubble3 bubbleRightArrow">
+        <div class="bubble3 bubble rightArrow">
             <h2># checkpoint 1</h2>
             <p class="bubbleText">
                 mardi 29/09 -> vendredi 09/10</p>
@@ -90,7 +101,7 @@
                 <p class="modal-content">Something</p>
             </details>
         </div>
-        <div class="bubble5 bubbleRightArrow">
+        <div class="bubble5 bubble rightArrow">
             <h2># checkpoint 1</h2>
             <p class="bubbleText"> 
                 Vendredi 11/09: c'est le moment de se rencontrer. Faire connaissance avec les autres wilders et
@@ -109,7 +120,7 @@
                 <p class="modal-content">Something</p>
             </details>
         </div>
-        <div class="bubble7 bubbleRightArrow">
+        <div class="bubble7 bubble rightArrow">
             <h2># checkpoint 1</h2>
             <p class="bubbleText">
                 vendredi 16/10</p>
@@ -128,7 +139,7 @@
                 <p class="modal-content">Something</p>
             </details>
         </div>
-        <div class="bubble9 bubbleRightArrow">
+        <div class="bubble9 bubble rightArrow">
             <h2># checkpoint 1</h2>
             <p class="bubbleText">
                 mardi 29/09 -> vendredi 09/10</p>
@@ -146,7 +157,7 @@
                 <p class="modal-content">Something</p>
             </details>
         </div>
-        <div class="bubble11 bubbleRightArrow">
+        <div class="bubble11 bubble rightArrow">
             <h2># checkpoint 1</h2>
             <p class="bubbleText">
                 vendredi 16/10</p>
@@ -190,9 +201,19 @@
         </div>
 
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.026613473603!2d4.017532815688508!3d49.25694147932852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e97501a1f9a0f5%3A0xf9ef0cdf67c7926a!2s6%20Rue%20de%20Saint-Brice%2C%2051100%20Reims!5e0!3m2!1sfr!2sfr!4v1601626506124!5m2!1sfr!2sfr" style="width: 100%; height: 200px; border: none;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.026613473603!2d4.017532815688508!3d49.25694147932852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e97501a1f9a0f5%3A0xf9ef0cdf67c7926a!2s6%20Rue%20de%20Saint-Brice%2C%2051100%20Reims!5e0!3m2!1sfr!2sfr!4v1601626506124!5m2!1sfr!2sfr" style="border: none;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <p style="font-size: 15px;">La Wild Code School sur Google Maps</p>
         </div>
     </div>
+    <!-- Animaux marins -->
+    <!-- <div class="canvas">
+        <div class="diver"><img src="http://cliparts.co/cliparts/8TA/6xd/8TA6xdKEc.png"></div>
+        <div class="squid-1"><img src="http://www.juliagracearts.com/wp-content/uploads/2011/08/002-VisualArt.png"></div>
+        <div class="squid-2"><img src="http://www.juliagracearts.com/wp-content/uploads/2011/08/002-VisualArt.png"></div>
+        <div class="fish-1"> <img src="http://cliparts.co/cliparts/pT7/K8A/pT7K8AXec.png"></div>
+        <div class="fish-2"><img src="http://cliparts.co/cliparts/pT7/K8A/pT7K8AXec.png"></div>
+        <div class="fish-3"><img src="http://cliparts.co/cliparts/pT7/K8A/pT7K8AXec.png"></div>
+    </div> -->
 
     <footer>
         <div>
