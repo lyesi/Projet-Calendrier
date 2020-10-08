@@ -309,17 +309,17 @@ section .wave.wave4
     -webkit-appearance: slider-vertical;  /* Override default CSS styles */
     -moz-box-orient: vertical;
     writing-mode: bt-lr;
-    appearance: none;
     background: #b83434; /* Grey background */
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
     position: absolute;
-    left: 50%;
+    left: 5%;
     transform: translateX(-50%);
-    top: 24em;
-    height: calc(100% - 44em);
+    width: 7px;
+    top: 9em;
+    height: calc(100% - 17em);
 }
   
   
@@ -423,8 +423,8 @@ section .wave.wave4
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    width: 20em;
-    height: 20em;    
+    width: 17em;
+    height: 17em;    
     background: rgb(127,181,183);
 } 
 */
@@ -740,6 +740,14 @@ footer > div > ul > li > a {
         font-size: 30px;
     }
 
+    /*Slider-------------*/
+    .slider {
+        left: 7%;
+        width: 12px;
+        top: 9em;
+        height: calc(100% - 17em);
+    }
+
     /* Mouettes */
 
     .mouette1 {
@@ -793,6 +801,16 @@ footer > div > ul > li > a {
         font-size: 40px;
     }
     
+    /*Slide------------*/
+
+    .slider {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 7px;
+      top: 9em;
+      height: calc(100% - 17em);
+    }
+
     /* Mouettes */
 
     .mouette1 {
@@ -913,6 +931,14 @@ footer > div > ul > li > a {
         margin-left: 380px;
         font-size: 40px;
     }
+    /*Slide------*/
+    .slider {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 7px;
+        top: 9em;
+        height: calc(100% - 17em);
+      }
 
     /* Mouettes */
 
@@ -1110,6 +1136,15 @@ footer > div > ul > li > a {
         font-size: 40px;
     }
     
+     /*Slide------*/
+     .slider {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 7px;
+        top: 9em;
+        height: calc(100% - 17em);
+      }
+
     /* Mouettes */
     
     .mouette1 {
