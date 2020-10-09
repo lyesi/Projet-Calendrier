@@ -72,7 +72,7 @@ header {
 
 .navContacts {
     color: rgb(31,34,41);
-    text-decoration:none
+    text-decoration:none;
 }
 
 .navContacts:hover {
@@ -94,6 +94,69 @@ header {
     padding: 0;
     margin: 0 20px;
     display: none;
+}
+
+/* Listes déroulantes */
+    
+.topListDates {
+    cursor: pointer;
+}
+
+.topListDates li {
+    list-style-type: none;
+    background-color: rgb(255,255,255);
+    color: rgb(31,34,41);
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    border-top: solid 2px rgb(151,178,190);
+    font-size: 18px;
+}
+
+.topListDates ul     {
+    display: none;
+}
+
+.topListDates:hover ul {
+    display: block;
+}
+
+.topListDates ul li a {
+    text-decoration: none;
+    color: rgb(31,34,41);
+}
+
+.topListDates ul li a:hover {
+    color: rgb(133,189,206);
+    text-shadow: #CCC 2px 2px 18px;
+}
+
+.topListSkills {
+    cursor: pointer;
+}
+
+.topListSkills li {
+    list-style-type: none;
+    background-color: rgb(255,255,255);
+    color: rgb(31,34,41);
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    border-top: solid 2px rgb(151,178,190);
+    font-size: 18px;
+}
+
+.topListSkills ul     {
+    display: none;
+}
+
+.topListSkills:hover ul {
+    display: block;
+}
+
+.topListSkills ul li a {
+    text-decoration: none;
+    color: rgb(31,34,41);
 }
 
 .change {
@@ -1149,7 +1212,7 @@ footer > div > ul > li > a {
         color: rgb(31,34,41);
         padding-top: 15px;
         padding-bottom: 5px;
-        padding-left: 10px;
+        padding-left: 4px;
         border-top: solid 2px rgb(151,178,190);
         font-size: 18px;
     }
@@ -1167,13 +1230,18 @@ footer > div > ul > li > a {
         color: rgb(31,34,41);
     }
 
+    .topListDates ul li a:hover {
+        color: rgb(133,189,206);
+        text-shadow: #CCC 2px 2px 18px;
+    }
+
     .topListSkills li {
         list-style-type: none;
         background-color: rgb(255,255,255);
         color: rgb(31,34,41);
         padding-top: 15px;
         padding-bottom: 5px;
-        padding-left: 4px;
+        padding-left: 3px;
         border-top: solid 2px rgb(151,178,190);
         font-size: 18px;
     }
