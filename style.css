@@ -492,6 +492,7 @@ h2{
     border: 1px solid rgba(38, 177, 172, 0.6);
     margin: 0;
     text-decoration: none;
+    font-weight: bold;
     text-align: center;
     transition: background 250ms ease-in-out, 
                 transform 150ms ease;
@@ -505,11 +506,11 @@ h2{
     --lightness: 50%;
     /*background: hsl(var(--hue), var(--saturation), var(--lightness));*/
     color: #ffffff;
-    
 }
 
 .button:hover, .button:focus {
-    --lightness: 40%;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(27,31,35,0.5);
 }
 
 .modal-trigger {
@@ -546,6 +547,10 @@ h2{
     box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
     background-color: white;
     padding: 1rem;
+}
+
+.competences {
+    font-weight: bold;
 }
   
 @keyframes fadein {
@@ -732,8 +737,12 @@ footer > div > ul > li > a {
     .mouette3 {
         display: none;
     }
+
+    .modal-content {
+        font-size: 13px;
+    }
+
     h2 {
-        font-size: 1px;
         padding-top: 70px;
     }
     .bubbleText {
@@ -812,6 +821,11 @@ footer > div > ul > li > a {
         font-size: 19px;
         padding-top: 70px;
     }
+
+    .modal-content {
+        font-size: 15px;
+    }
+
     .bubbleText {
         text-align: center;
         font-size: 17px;
@@ -877,6 +891,10 @@ footer > div > ul > li > a {
         z-index: 1;
         margin-left: -100px;
         bottom: -80px;
+    }
+
+    .modal-content {
+        font-size: 15px;
     }
 
     .bubble {
@@ -972,6 +990,10 @@ footer > div > ul > li > a {
         margin-bottom: 10%;
     }
 
+    .modal-content {
+        font-size: 20px;
+    }
+
     .bubble {
         width: 25em;
         height: 25em;
@@ -1001,14 +1023,18 @@ footer > div > ul > li > a {
     #container {
         grid-template-columns: 1fr 1fr;
         grid-gap: 4rem; 
-    } 
+    }
+
+    .modal-content {
+        font-size: 20px;
+    }
+
     .ball {
         width: 100%;
         height: 100%;
         border-radius: 100%;
         position: relative;
         background: radial-gradient(circle at bottom, #81e8f6, #76deef 10%, #055194 80%, #062745 100%); 
-        z-index: -2;
     }
     .ball:after {
         content: "";
@@ -1023,7 +1049,6 @@ footer > div > ul > li > a {
         filter: blur(1px);
         -webkit-transform: rotateZ(-30deg);
         transform: rotateZ(-30deg); 
-        z-index: -1;
     }
      
     .ball.plain:before, .ball.plain:after {
@@ -1433,6 +1458,29 @@ footer > div > ul > li > a {
         font-size: 24px;
         width: 350px;
         margin-top: 70px;
+    }
+
+    .button {
+        width: 160px;
+        border-radius: 20px;
+        cursor: pointer;
+        display: inline-block;
+        border: 2px solid rgba(38, 177, 172, 0.6);
+        margin-top: 20px;
+        text-decoration: none;
+        text-align: center;
+        transition: background 250ms ease-in-out, 
+                    transform 150ms ease;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-family: sans-serif;
+        padding: 1rem;
+        font-size: 1rem;
+        --hue: 220;
+        --saturation: 100%;
+        --lightness: 50%;
+        /*background: hsl(var(--hue), var(--saturation), var(--lightness));*/
+        color: #ffffff; 
     }
 
     .bubble2 {
