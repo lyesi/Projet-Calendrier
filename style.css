@@ -566,15 +566,15 @@ h2{
 
 .contact {
     display: inline-block;
-    width: 60%;
-    margin-left: 60px;
+    width: 90%;
+    margin: auto;
 }
 
 #formulaire {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 200px;
+    margin-top: 40px;
 }
 
 #formulaire h3 {
@@ -1188,7 +1188,7 @@ footer > div > ul > li > a {
     .contact {
         display: inline-block;
         width: 35%;
-        margin-left: 60px;
+        text-align: right;
     }
 
     #formulaire {
@@ -1532,7 +1532,6 @@ footer > div > ul > li > a {
     .contact {
         display: inline-block;
         width: 35%;
-        margin-left: 60px;
     }
 
     #formulaire {
@@ -1570,7 +1569,6 @@ footer > div > ul > li > a {
     .map {
         display: inline-block;
         width: 30%;
-        margin-right: 60px;
     }
 
     #formulaire iframe {
