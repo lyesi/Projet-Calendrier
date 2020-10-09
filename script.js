@@ -1,8 +1,11 @@
+// Burger menu //
 function onClickMenu() {
     document.getElementById("burgerMenuBar").classList.toggle("change");
     document.getElementById("navigation").classList.toggle("change");
     document.getElementById("burgerMenuCircle").classList.toggle("changeCircle");
 }
+
+// Slider: la jauge qui indique où on en est dans la formation //
 const date1 = new Date();
 const date2 = new Date('9/11/2020');
 const diffTime = Math.abs(date2 - date1);

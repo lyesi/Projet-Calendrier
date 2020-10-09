@@ -397,18 +397,18 @@ header {
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
-    width: 150px; /* Set a specific slider handle width */
-    height: 150px; /* Slider handle height */
+    width: 48px; /* Set a specific slider handle width */
+    height: 48px; /* Slider handle height */
     border-radius: 50%;
-    background: red; /* Green background */
+    background: url(images/subIcon48.png); /* Green background */
     cursor: pointer; /* Cursor on hover */
 }
   
-.slider::-moz-range-thumb {
-    appearance: none;
-    width: 100px; /* Set a specific slider handle width */
-    height: 100px; /* Slider handle height */
-    background: red; /* Green background */
+  .slider::-moz-range-thumb {
+    width: 48px; /* Set a specific slider handle width */
+    height: 48px; /* Slider handle height */
+    border-radius: 50%;
+    background: url(images/subIcon48.png); 
     cursor: pointer; /* Cursor on hover */
 }
 
@@ -470,7 +470,8 @@ header {
     align-items: center;
 }
 h2{
-    padding-top: 80px;
+    font-size: 20px;
+    padding-top: 50px;
 }
 .bubbleText {
     margin: auto;
@@ -478,7 +479,7 @@ h2{
     text-align: center;
     font-size: 16px;
     width: 80%;
-    margin-top: 20px;
+    margin-top: -15px;
 }
 
 /* Button in bubble*/
@@ -731,9 +732,19 @@ footer > div > ul > li > a {
     .mouette3 {
         display: none;
     }
+    h2 {
+        font-size: 1px;
+        padding-top: 70px;
+    }
+    .bubbleText {
+        text-align: center;
+        font-size: 15px;
+        padding: 20px;
+        width: 230px;
+    }
 }
 
-@media only screen and (min-width:364px) and (max-width:459px) {
+@media only screen and (min-width:364px) and (max-width:460px) {
 
     /* titres */
 
@@ -786,6 +797,7 @@ footer > div > ul > li > a {
     
     .mouette3 {
         display: none;
+
     }
 
     /* Ponton */
@@ -795,8 +807,19 @@ footer > div > ul > li > a {
         margin-left: -100px;
         bottom: -40px;
     }
-
+ 
+    h2 {
+        font-size: 19px;
+        padding-top: 70px;
+    }
+    .bubbleText {
+        text-align: center;
+        font-size: 17px;
+        padding: 20px;
+        width: 230px;
+    }
 }
+
 @media only screen and (min-width:460px) and (max-width:866px) {
     
     /* titres */
@@ -859,6 +882,16 @@ footer > div > ul > li > a {
     .bubble {
         width: 24em;
         height: 24em;
+    }
+    h2 {
+        font-size: 24px;
+        padding-top: 100px;
+    }
+    .bubbleText {
+        text-align: center;
+        font-size: 20px;
+        padding: 30px;
+        width: 300px;
     }
 }
 
@@ -951,7 +984,18 @@ footer > div > ul > li > a {
         padding: 0;
         transform: translate(-50%,-35%);
     }
-}
+    h2 {
+        font-size: 25px;
+        padding-top: 80px;
+
+    }
+    .bubbleText {
+        text-align: center;
+        font-size: 20px;
+        padding: 30px;
+        width: 300px;
+    }
+}   
 
 @media only screen and (min-width:993px) and (max-width:1199px) {
     #container {
@@ -1380,12 +1424,15 @@ footer > div > ul > li > a {
         width: 30em;
         height: 30em;
     }
-
+    h2 {
+        font-size: 26px;
+        padding-top: 100px;
+    }
     .bubbleText {
         text-align: center;
-        font-size: 18px;
-        padding: 20px;
-        width: 200px;
+        font-size: 24px;
+        width: 350px;
+        margin-top: 70px;
     }
 
     .bubble2 {
@@ -1428,7 +1475,9 @@ footer > div > ul > li > a {
         grid-row-start: 11;
         grid-column-start: 1;
     }    
-
+    .modal-content {
+        font-size: 26px;
+    }
 
     /* Contact */
 
